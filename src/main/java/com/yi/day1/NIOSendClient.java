@@ -21,15 +21,14 @@ public class NIOSendClient {
         client.sendFile();
     }
 
-    private File srcFile = new File("/Users/junyiwu/workspace/code/code/java/nrz/src/main/resources/temp.txt");
-    private File destFile = new File("/Users/junyiwu/workspace/code/code/java/nrz/src/main/resources/temp1.txt");
+    private File srcFile = new File("/Users/junyiwu/workspace/code/java/nrz/src/main/resources/temp.txt");
     public void sendFile() throws Exception {
         if (!srcFile.exists()) {
             log.info("源文件文件不存在，路径：{}", srcFile.getAbsolutePath());
         }
         FileChannel fileChannel = new FileInputStream(srcFile).getChannel();
         SocketChannel socketChannel = SocketChannel.open();
-        socketChannel.socket().connect(new InetSocketAddress(8888));
+        socketChannel.socket().connect(new InetSocketAddress("127.0.0.1", 8888));
         socketChannel.configureBlocking(false);
 
         while (!socketChannel.finishConnect()) {
@@ -38,13 +37,14 @@ public class NIOSendClient {
         log.info("连接服务器成功");
 
         // 发送文件名称
-        ByteBuffer fileNameBuffer = StandardCharsets.UTF_8.encode(destFile.getAbsolutePath());
+        ByteBuffer fileNameBuffer = StandardCharsets.UTF_8.encode(srcFile.getName());
         socketChannel.write(fileNameBuffer);
         // 发送文件长度
         ByteBuffer buffer = ByteBuffer.allocate(1024);
         buffer.putLong(srcFile.length());
         buffer.flip();
         socketChannel.write(buffer);
+        buffer.clear();
 
         log.info("开始传输文件");
         int length = 0;
