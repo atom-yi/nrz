@@ -45,6 +45,8 @@ public class EchoClient {
                     String str = sysInput.nextLine();
                     buffer.clear();
                     buffer.put(str.getBytes(StandardCharsets.UTF_8));
+                    buffer.flip();
+                    sc.write(buffer);
                     buffer.clear();
                 }
                 iterator.remove();
