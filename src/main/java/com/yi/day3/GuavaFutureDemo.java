@@ -1,4 +1,4 @@
-package com.yi.day4;
+package com.yi.day3;
 
 import com.google.common.util.concurrent.*;
 import lombok.extern.slf4j.Slf4j;

@@ -1,18 +1,15 @@
-package com.yi.day4;
+package com.yi.day3;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 @Slf4j
-public class JoinDemo {
+public class FutureDemo {
     private static final int SLEEP_GAP = 1000;
-    static class HotWaterThread extends Thread {
-        public HotWaterThread() {
-            super("**烧水-Thread");
-        }
+    static class HotWaterCallable implements Callable<Boolean> {
         @Override
-        public void run() {
+        public Boolean call() {
             try {
                 TimeUnit.MILLISECONDS.sleep(SLEEP_GAP);
                 log.info("洗好水壶");
@@ -24,15 +21,13 @@ public class JoinDemo {
                 log.error("异常中断");
             }
             log.info("运行结束");
+            return true;
         }
     }
 
-    static class WashThread extends Thread {
-        public WashThread() {
-            super("$$清洗-Thread");
-        }
+    static class WashCallable implements Callable<Boolean> {
         @Override
-        public void run() {
+        public Boolean call() {
             try {
                 TimeUnit.MILLISECONDS.sleep(SLEEP_GAP);
                 log.info("洗茶壶");
@@ -44,25 +39,39 @@ public class JoinDemo {
                 log.error("异常中断");
             }
             log.info("运行结束");
+            return true;
+        }
+    }
+
+    static void drinkTea(boolean waterOk, boolean cpuOk) {
+        if (waterOk && cpuOk) {
+            log.info("泡茶喝");
+        } else if (!cpuOk) {
+            log.info("茶具没洗好");
+        } else {
+            log.info("水没烧好");
         }
     }
 
     public static void main(String[] args) {
         Thread.currentThread().setName("主线程");
-        Thread hThread = new HotWaterThread();
-        Thread wThread = new WashThread();
+        FutureTask<Boolean> hTask = new FutureTask<>(new HotWaterCallable());
+        Thread hThread = new Thread(hTask);
+
+        FutureTask<Boolean> wTask = new FutureTask<>(new WashCallable());
+        Thread wThread = new Thread(wTask);
+
         hThread.start();
         wThread.start();
 
         try {
-            log.info("加入 join");
-            hThread.join();
-            log.info("??????");
-            wThread.join();
-            log.info("泡茶喝");
-        } catch (InterruptedException e) {
-            log.info("异常中断");
+            Boolean waterOk = hTask.get();
+            Boolean cupOk = wTask.get();
+            drinkTea(waterOk, cupOk);
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
         }
-        log.info("运行结束");
+        log.info("结束");
     }
+
 }
