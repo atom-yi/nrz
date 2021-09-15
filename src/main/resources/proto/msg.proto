@@ -1,0 +1,10 @@
+syntax="proto3";
+package com.yi.day6.proto;
+
+option java_package = "com.yi.day6.proto";
+option java_outer_classname = "MsgProto";
+
+message Msg {
+  uint32 id = 1; // 消息 ID
+  string content = 2; // 消息内容
+}
