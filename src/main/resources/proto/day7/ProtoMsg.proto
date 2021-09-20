@@ -2,7 +2,7 @@ syntax = "proto3";
 package com.yi.day7.proto;
 
 option java_package = "com.yi.day7.proto";
-option java_outer_classname = "MessageProto";
+option java_outer_classname = "ProtoMessage";
 
 /*消息类型*/
 enum HeadType {
@@ -37,7 +37,7 @@ message LoginResponse {
 /*聊天请求信息*/
 message MessageRequest {
   uint64 msgId = 1;
-  string form = 2;
+  string from = 2;
   string to = 3;
   uint64 time = 4;
   uint32 msgType = 5;
@@ -66,15 +66,23 @@ message MessageNotification {
   string timestamp = 4;
 }
 
+/*心跳信息*/
+message MessageHeartBeat {
+  uint32 seq = 1;
+  string uid = 2;
+  string json = 3;
+}
+
 /*外层消息*/
 message Message {
   HeadType type = 1;
   uint64 sequence = 2;
   string sessionId = 3;
 
-  LoginRequest request = 4;
-  LoginResponse response = 5;
+  LoginRequest loginRequest = 4;
+  LoginResponse loginResponse = 5;
   MessageRequest messageRequest = 6;
   MessageResponse messageResponse = 7;
   MessageNotification notification = 8;
+  MessageHeartBeat heartBeat = 9;
 }

@@ -1,7 +1,7 @@
-package com.yi.day7;
+package com.yi.day7.eoncoder;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.yi.day7.proto.MessageProto;
+import com.yi.day7.proto.ProtoMessage;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
@@ -38,7 +38,7 @@ public class ProtobufDecoder extends ByteToMessageDecoder {
             in.readBytes(data, 0, length);
         }
 
-        MessageProto.Message msg = MessageProto.Message.parseFrom(data);
+        ProtoMessage.Message msg = ProtoMessage.Message.parseFrom(data);
         if (msg != null) {
             out.add(msg);
         }

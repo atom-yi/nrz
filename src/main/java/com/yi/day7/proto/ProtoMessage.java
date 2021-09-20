@@ -3,8 +3,8 @@
 
 package com.yi.day7.proto;
 
-public final class MessageProto {
-  private MessageProto() {}
+public final class ProtoMessage {
+  private ProtoMessage() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -235,7 +235,7 @@ public final class MessageProto {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.yi.day7.proto.MessageProto.getDescriptor().getEnumTypes().get(0);
+      return com.yi.day7.proto.ProtoMessage.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final HeadType[] VALUES = values();
@@ -458,15 +458,15 @@ public final class MessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginRequest_descriptor;
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginRequest_fieldAccessorTable
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.yi.day7.proto.MessageProto.LoginRequest.class, com.yi.day7.proto.MessageProto.LoginRequest.Builder.class);
+              com.yi.day7.proto.ProtoMessage.LoginRequest.class, com.yi.day7.proto.ProtoMessage.LoginRequest.Builder.class);
     }
 
     public static final int UID_FIELD_NUMBER = 1;
@@ -732,10 +732,10 @@ public final class MessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.yi.day7.proto.MessageProto.LoginRequest)) {
+      if (!(obj instanceof com.yi.day7.proto.ProtoMessage.LoginRequest)) {
         return super.equals(obj);
       }
-      com.yi.day7.proto.MessageProto.LoginRequest other = (com.yi.day7.proto.MessageProto.LoginRequest) obj;
+      com.yi.day7.proto.ProtoMessage.LoginRequest other = (com.yi.day7.proto.ProtoMessage.LoginRequest) obj;
 
       if (!getUid()
           .equals(other.getUid())) return false;
@@ -773,69 +773,69 @@ public final class MessageProto {
       return hash;
     }
 
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(byte[] data)
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseDelimitedFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.LoginRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -848,7 +848,7 @@ public final class MessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.yi.day7.proto.MessageProto.LoginRequest prototype) {
+    public static Builder newBuilder(com.yi.day7.proto.ProtoMessage.LoginRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -873,21 +873,21 @@ public final class MessageProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.yi.day7.proto.LoginRequest)
-        com.yi.day7.proto.MessageProto.LoginRequestOrBuilder {
+        com.yi.day7.proto.ProtoMessage.LoginRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginRequest_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginRequest_fieldAccessorTable
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.yi.day7.proto.MessageProto.LoginRequest.class, com.yi.day7.proto.MessageProto.LoginRequest.Builder.class);
+                com.yi.day7.proto.ProtoMessage.LoginRequest.class, com.yi.day7.proto.ProtoMessage.LoginRequest.Builder.class);
       }
 
-      // Construct using com.yi.day7.proto.MessageProto.LoginRequest.newBuilder()
+      // Construct using com.yi.day7.proto.ProtoMessage.LoginRequest.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -921,17 +921,17 @@ public final class MessageProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginRequest_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginRequest_descriptor;
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.LoginRequest getDefaultInstanceForType() {
-        return com.yi.day7.proto.MessageProto.LoginRequest.getDefaultInstance();
+      public com.yi.day7.proto.ProtoMessage.LoginRequest getDefaultInstanceForType() {
+        return com.yi.day7.proto.ProtoMessage.LoginRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.LoginRequest build() {
-        com.yi.day7.proto.MessageProto.LoginRequest result = buildPartial();
+      public com.yi.day7.proto.ProtoMessage.LoginRequest build() {
+        com.yi.day7.proto.ProtoMessage.LoginRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -939,8 +939,8 @@ public final class MessageProto {
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.LoginRequest buildPartial() {
-        com.yi.day7.proto.MessageProto.LoginRequest result = new com.yi.day7.proto.MessageProto.LoginRequest(this);
+      public com.yi.day7.proto.ProtoMessage.LoginRequest buildPartial() {
+        com.yi.day7.proto.ProtoMessage.LoginRequest result = new com.yi.day7.proto.ProtoMessage.LoginRequest(this);
         result.uid_ = uid_;
         result.deviceId_ = deviceId_;
         result.token_ = token_;
@@ -984,16 +984,16 @@ public final class MessageProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.yi.day7.proto.MessageProto.LoginRequest) {
-          return mergeFrom((com.yi.day7.proto.MessageProto.LoginRequest)other);
+        if (other instanceof com.yi.day7.proto.ProtoMessage.LoginRequest) {
+          return mergeFrom((com.yi.day7.proto.ProtoMessage.LoginRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.yi.day7.proto.MessageProto.LoginRequest other) {
-        if (other == com.yi.day7.proto.MessageProto.LoginRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.yi.day7.proto.ProtoMessage.LoginRequest other) {
+        if (other == com.yi.day7.proto.ProtoMessage.LoginRequest.getDefaultInstance()) return this;
         if (!other.getUid().isEmpty()) {
           uid_ = other.uid_;
           onChanged();
@@ -1028,11 +1028,11 @@ public final class MessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.yi.day7.proto.MessageProto.LoginRequest parsedMessage = null;
+        com.yi.day7.proto.ProtoMessage.LoginRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.yi.day7.proto.MessageProto.LoginRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.yi.day7.proto.ProtoMessage.LoginRequest) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1485,12 +1485,12 @@ public final class MessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:com.yi.day7.proto.LoginRequest)
-    private static final com.yi.day7.proto.MessageProto.LoginRequest DEFAULT_INSTANCE;
+    private static final com.yi.day7.proto.ProtoMessage.LoginRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.yi.day7.proto.MessageProto.LoginRequest();
+      DEFAULT_INSTANCE = new com.yi.day7.proto.ProtoMessage.LoginRequest();
     }
 
-    public static com.yi.day7.proto.MessageProto.LoginRequest getDefaultInstance() {
+    public static com.yi.day7.proto.ProtoMessage.LoginRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1515,7 +1515,7 @@ public final class MessageProto {
     }
 
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.LoginRequest getDefaultInstanceForType() {
+    public com.yi.day7.proto.ProtoMessage.LoginRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1647,15 +1647,15 @@ public final class MessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginResponse_descriptor;
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginResponse_fieldAccessorTable
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.yi.day7.proto.MessageProto.LoginResponse.class, com.yi.day7.proto.MessageProto.LoginResponse.Builder.class);
+              com.yi.day7.proto.ProtoMessage.LoginResponse.class, com.yi.day7.proto.ProtoMessage.LoginResponse.Builder.class);
     }
 
     public static final int RESULT_FIELD_NUMBER = 1;
@@ -1789,10 +1789,10 @@ public final class MessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.yi.day7.proto.MessageProto.LoginResponse)) {
+      if (!(obj instanceof com.yi.day7.proto.ProtoMessage.LoginResponse)) {
         return super.equals(obj);
       }
-      com.yi.day7.proto.MessageProto.LoginResponse other = (com.yi.day7.proto.MessageProto.LoginResponse) obj;
+      com.yi.day7.proto.ProtoMessage.LoginResponse other = (com.yi.day7.proto.ProtoMessage.LoginResponse) obj;
 
       if (getResult()
           != other.getResult()) return false;
@@ -1827,69 +1827,69 @@ public final class MessageProto {
       return hash;
     }
 
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(byte[] data)
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseDelimitedFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.LoginResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1902,7 +1902,7 @@ public final class MessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.yi.day7.proto.MessageProto.LoginResponse prototype) {
+    public static Builder newBuilder(com.yi.day7.proto.ProtoMessage.LoginResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1927,21 +1927,21 @@ public final class MessageProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.yi.day7.proto.LoginResponse)
-        com.yi.day7.proto.MessageProto.LoginResponseOrBuilder {
+        com.yi.day7.proto.ProtoMessage.LoginResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginResponse_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginResponse_fieldAccessorTable
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.yi.day7.proto.MessageProto.LoginResponse.class, com.yi.day7.proto.MessageProto.LoginResponse.Builder.class);
+                com.yi.day7.proto.ProtoMessage.LoginResponse.class, com.yi.day7.proto.ProtoMessage.LoginResponse.Builder.class);
       }
 
-      // Construct using com.yi.day7.proto.MessageProto.LoginResponse.newBuilder()
+      // Construct using com.yi.day7.proto.ProtoMessage.LoginResponse.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1973,17 +1973,17 @@ public final class MessageProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_LoginResponse_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_LoginResponse_descriptor;
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.LoginResponse getDefaultInstanceForType() {
-        return com.yi.day7.proto.MessageProto.LoginResponse.getDefaultInstance();
+      public com.yi.day7.proto.ProtoMessage.LoginResponse getDefaultInstanceForType() {
+        return com.yi.day7.proto.ProtoMessage.LoginResponse.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.LoginResponse build() {
-        com.yi.day7.proto.MessageProto.LoginResponse result = buildPartial();
+      public com.yi.day7.proto.ProtoMessage.LoginResponse build() {
+        com.yi.day7.proto.ProtoMessage.LoginResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1991,8 +1991,8 @@ public final class MessageProto {
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.LoginResponse buildPartial() {
-        com.yi.day7.proto.MessageProto.LoginResponse result = new com.yi.day7.proto.MessageProto.LoginResponse(this);
+      public com.yi.day7.proto.ProtoMessage.LoginResponse buildPartial() {
+        com.yi.day7.proto.ProtoMessage.LoginResponse result = new com.yi.day7.proto.ProtoMessage.LoginResponse(this);
         result.result_ = result_;
         result.code_ = code_;
         result.info_ = info_;
@@ -2035,16 +2035,16 @@ public final class MessageProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.yi.day7.proto.MessageProto.LoginResponse) {
-          return mergeFrom((com.yi.day7.proto.MessageProto.LoginResponse)other);
+        if (other instanceof com.yi.day7.proto.ProtoMessage.LoginResponse) {
+          return mergeFrom((com.yi.day7.proto.ProtoMessage.LoginResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.yi.day7.proto.MessageProto.LoginResponse other) {
-        if (other == com.yi.day7.proto.MessageProto.LoginResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.yi.day7.proto.ProtoMessage.LoginResponse other) {
+        if (other == com.yi.day7.proto.ProtoMessage.LoginResponse.getDefaultInstance()) return this;
         if (other.getResult() != false) {
           setResult(other.getResult());
         }
@@ -2073,11 +2073,11 @@ public final class MessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.yi.day7.proto.MessageProto.LoginResponse parsedMessage = null;
+        com.yi.day7.proto.ProtoMessage.LoginResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.yi.day7.proto.MessageProto.LoginResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.yi.day7.proto.ProtoMessage.LoginResponse) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2272,12 +2272,12 @@ public final class MessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:com.yi.day7.proto.LoginResponse)
-    private static final com.yi.day7.proto.MessageProto.LoginResponse DEFAULT_INSTANCE;
+    private static final com.yi.day7.proto.ProtoMessage.LoginResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.yi.day7.proto.MessageProto.LoginResponse();
+      DEFAULT_INSTANCE = new com.yi.day7.proto.ProtoMessage.LoginResponse();
     }
 
-    public static com.yi.day7.proto.MessageProto.LoginResponse getDefaultInstance() {
+    public static com.yi.day7.proto.ProtoMessage.LoginResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2302,7 +2302,7 @@ public final class MessageProto {
     }
 
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.LoginResponse getDefaultInstanceForType() {
+    public com.yi.day7.proto.ProtoMessage.LoginResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2319,16 +2319,16 @@ public final class MessageProto {
     long getMsgId();
 
     /**
-     * <code>string form = 2;</code>
-     * @return The form.
+     * <code>string from = 2;</code>
+     * @return The from.
      */
-    java.lang.String getForm();
+    java.lang.String getFrom();
     /**
-     * <code>string form = 2;</code>
-     * @return The bytes for form.
+     * <code>string from = 2;</code>
+     * @return The bytes for from.
      */
     com.google.protobuf.ByteString
-        getFormBytes();
+        getFromBytes();
 
     /**
      * <code>string to = 3;</code>
@@ -2431,7 +2431,7 @@ public final class MessageProto {
       super(builder);
     }
     private MessageRequest() {
-      form_ = "";
+      from_ = "";
       to_ = "";
       content_ = "";
       url_ = "";
@@ -2478,7 +2478,7 @@ public final class MessageProto {
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              form_ = s;
+              from_ = s;
               break;
             }
             case 26: {
@@ -2548,15 +2548,15 @@ public final class MessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageRequest_descriptor;
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageRequest_fieldAccessorTable
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.yi.day7.proto.MessageProto.MessageRequest.class, com.yi.day7.proto.MessageProto.MessageRequest.Builder.class);
+              com.yi.day7.proto.ProtoMessage.MessageRequest.class, com.yi.day7.proto.ProtoMessage.MessageRequest.Builder.class);
     }
 
     public static final int MSGID_FIELD_NUMBER = 1;
@@ -2570,38 +2570,38 @@ public final class MessageProto {
       return msgId_;
     }
 
-    public static final int FORM_FIELD_NUMBER = 2;
-    private volatile java.lang.Object form_;
+    public static final int FROM_FIELD_NUMBER = 2;
+    private volatile java.lang.Object from_;
     /**
-     * <code>string form = 2;</code>
-     * @return The form.
+     * <code>string from = 2;</code>
+     * @return The from.
      */
     @java.lang.Override
-    public java.lang.String getForm() {
-      java.lang.Object ref = form_;
+    public java.lang.String getFrom() {
+      java.lang.Object ref = from_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        form_ = s;
+        from_ = s;
         return s;
       }
     }
     /**
-     * <code>string form = 2;</code>
-     * @return The bytes for form.
+     * <code>string from = 2;</code>
+     * @return The bytes for from.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getFormBytes() {
-      java.lang.Object ref = form_;
+        getFromBytes() {
+      java.lang.Object ref = from_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        form_ = b;
+        from_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -2875,8 +2875,8 @@ public final class MessageProto {
       if (msgId_ != 0L) {
         output.writeUInt64(1, msgId_);
       }
-      if (!getFormBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, form_);
+      if (!getFromBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, from_);
       }
       if (!getToBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, to_);
@@ -2915,8 +2915,8 @@ public final class MessageProto {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(1, msgId_);
       }
-      if (!getFormBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, form_);
+      if (!getFromBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, from_);
       }
       if (!getToBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, to_);
@@ -2954,15 +2954,15 @@ public final class MessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.yi.day7.proto.MessageProto.MessageRequest)) {
+      if (!(obj instanceof com.yi.day7.proto.ProtoMessage.MessageRequest)) {
         return super.equals(obj);
       }
-      com.yi.day7.proto.MessageProto.MessageRequest other = (com.yi.day7.proto.MessageProto.MessageRequest) obj;
+      com.yi.day7.proto.ProtoMessage.MessageRequest other = (com.yi.day7.proto.ProtoMessage.MessageRequest) obj;
 
       if (getMsgId()
           != other.getMsgId()) return false;
-      if (!getForm()
-          .equals(other.getForm())) return false;
+      if (!getFrom()
+          .equals(other.getFrom())) return false;
       if (!getTo()
           .equals(other.getTo())) return false;
       if (getTime()
@@ -2993,8 +2993,8 @@ public final class MessageProto {
       hash = (37 * hash) + MSGID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getMsgId());
-      hash = (37 * hash) + FORM_FIELD_NUMBER;
-      hash = (53 * hash) + getForm().hashCode();
+      hash = (37 * hash) + FROM_FIELD_NUMBER;
+      hash = (53 * hash) + getFrom().hashCode();
       hash = (37 * hash) + TO_FIELD_NUMBER;
       hash = (53 * hash) + getTo().hashCode();
       hash = (37 * hash) + TIME_FIELD_NUMBER;
@@ -3017,69 +3017,69 @@ public final class MessageProto {
       return hash;
     }
 
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(byte[] data)
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseDelimitedFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageRequest parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3092,7 +3092,7 @@ public final class MessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.yi.day7.proto.MessageProto.MessageRequest prototype) {
+    public static Builder newBuilder(com.yi.day7.proto.ProtoMessage.MessageRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3117,21 +3117,21 @@ public final class MessageProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.yi.day7.proto.MessageRequest)
-        com.yi.day7.proto.MessageProto.MessageRequestOrBuilder {
+        com.yi.day7.proto.ProtoMessage.MessageRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageRequest_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageRequest_fieldAccessorTable
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.yi.day7.proto.MessageProto.MessageRequest.class, com.yi.day7.proto.MessageProto.MessageRequest.Builder.class);
+                com.yi.day7.proto.ProtoMessage.MessageRequest.class, com.yi.day7.proto.ProtoMessage.MessageRequest.Builder.class);
       }
 
-      // Construct using com.yi.day7.proto.MessageProto.MessageRequest.newBuilder()
+      // Construct using com.yi.day7.proto.ProtoMessage.MessageRequest.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3151,7 +3151,7 @@ public final class MessageProto {
         super.clear();
         msgId_ = 0L;
 
-        form_ = "";
+        from_ = "";
 
         to_ = "";
 
@@ -3175,17 +3175,17 @@ public final class MessageProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageRequest_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageRequest_descriptor;
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageRequest getDefaultInstanceForType() {
-        return com.yi.day7.proto.MessageProto.MessageRequest.getDefaultInstance();
+      public com.yi.day7.proto.ProtoMessage.MessageRequest getDefaultInstanceForType() {
+        return com.yi.day7.proto.ProtoMessage.MessageRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageRequest build() {
-        com.yi.day7.proto.MessageProto.MessageRequest result = buildPartial();
+      public com.yi.day7.proto.ProtoMessage.MessageRequest build() {
+        com.yi.day7.proto.ProtoMessage.MessageRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3193,10 +3193,10 @@ public final class MessageProto {
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageRequest buildPartial() {
-        com.yi.day7.proto.MessageProto.MessageRequest result = new com.yi.day7.proto.MessageProto.MessageRequest(this);
+      public com.yi.day7.proto.ProtoMessage.MessageRequest buildPartial() {
+        com.yi.day7.proto.ProtoMessage.MessageRequest result = new com.yi.day7.proto.ProtoMessage.MessageRequest(this);
         result.msgId_ = msgId_;
-        result.form_ = form_;
+        result.from_ = from_;
         result.to_ = to_;
         result.time_ = time_;
         result.msgType_ = msgType_;
@@ -3243,21 +3243,21 @@ public final class MessageProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.yi.day7.proto.MessageProto.MessageRequest) {
-          return mergeFrom((com.yi.day7.proto.MessageProto.MessageRequest)other);
+        if (other instanceof com.yi.day7.proto.ProtoMessage.MessageRequest) {
+          return mergeFrom((com.yi.day7.proto.ProtoMessage.MessageRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.yi.day7.proto.MessageProto.MessageRequest other) {
-        if (other == com.yi.day7.proto.MessageProto.MessageRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.yi.day7.proto.ProtoMessage.MessageRequest other) {
+        if (other == com.yi.day7.proto.ProtoMessage.MessageRequest.getDefaultInstance()) return this;
         if (other.getMsgId() != 0L) {
           setMsgId(other.getMsgId());
         }
-        if (!other.getForm().isEmpty()) {
-          form_ = other.form_;
+        if (!other.getFrom().isEmpty()) {
+          from_ = other.from_;
           onChanged();
         }
         if (!other.getTo().isEmpty()) {
@@ -3305,11 +3305,11 @@ public final class MessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.yi.day7.proto.MessageProto.MessageRequest parsedMessage = null;
+        com.yi.day7.proto.ProtoMessage.MessageRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.yi.day7.proto.MessageProto.MessageRequest) e.getUnfinishedMessage();
+          parsedMessage = (com.yi.day7.proto.ProtoMessage.MessageRequest) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3350,78 +3350,78 @@ public final class MessageProto {
         return this;
       }
 
-      private java.lang.Object form_ = "";
+      private java.lang.Object from_ = "";
       /**
-       * <code>string form = 2;</code>
-       * @return The form.
+       * <code>string from = 2;</code>
+       * @return The from.
        */
-      public java.lang.String getForm() {
-        java.lang.Object ref = form_;
+      public java.lang.String getFrom() {
+        java.lang.Object ref = from_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          form_ = s;
+          from_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string form = 2;</code>
-       * @return The bytes for form.
+       * <code>string from = 2;</code>
+       * @return The bytes for from.
        */
       public com.google.protobuf.ByteString
-          getFormBytes() {
-        java.lang.Object ref = form_;
+          getFromBytes() {
+        java.lang.Object ref = from_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          form_ = b;
+          from_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string form = 2;</code>
-       * @param value The form to set.
+       * <code>string from = 2;</code>
+       * @param value The from to set.
        * @return This builder for chaining.
        */
-      public Builder setForm(
+      public Builder setFrom(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        form_ = value;
+        from_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string form = 2;</code>
+       * <code>string from = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearForm() {
+      public Builder clearFrom() {
         
-        form_ = getDefaultInstance().getForm();
+        from_ = getDefaultInstance().getFrom();
         onChanged();
         return this;
       }
       /**
-       * <code>string form = 2;</code>
-       * @param value The bytes for form to set.
+       * <code>string from = 2;</code>
+       * @param value The bytes for from to set.
        * @return This builder for chaining.
        */
-      public Builder setFormBytes(
+      public Builder setFromBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        form_ = value;
+        from_ = value;
         onChanged();
         return this;
       }
@@ -3960,12 +3960,12 @@ public final class MessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:com.yi.day7.proto.MessageRequest)
-    private static final com.yi.day7.proto.MessageProto.MessageRequest DEFAULT_INSTANCE;
+    private static final com.yi.day7.proto.ProtoMessage.MessageRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.yi.day7.proto.MessageProto.MessageRequest();
+      DEFAULT_INSTANCE = new com.yi.day7.proto.ProtoMessage.MessageRequest();
     }
 
-    public static com.yi.day7.proto.MessageProto.MessageRequest getDefaultInstance() {
+    public static com.yi.day7.proto.ProtoMessage.MessageRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3990,7 +3990,7 @@ public final class MessageProto {
     }
 
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageRequest getDefaultInstanceForType() {
+    public com.yi.day7.proto.ProtoMessage.MessageRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4144,15 +4144,15 @@ public final class MessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageResponse_descriptor;
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageResponse_fieldAccessorTable
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.yi.day7.proto.MessageProto.MessageResponse.class, com.yi.day7.proto.MessageProto.MessageResponse.Builder.class);
+              com.yi.day7.proto.ProtoMessage.MessageResponse.class, com.yi.day7.proto.ProtoMessage.MessageResponse.Builder.class);
     }
 
     public static final int RESULT_FIELD_NUMBER = 1;
@@ -4322,10 +4322,10 @@ public final class MessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.yi.day7.proto.MessageProto.MessageResponse)) {
+      if (!(obj instanceof com.yi.day7.proto.ProtoMessage.MessageResponse)) {
         return super.equals(obj);
       }
-      com.yi.day7.proto.MessageProto.MessageResponse other = (com.yi.day7.proto.MessageProto.MessageResponse) obj;
+      com.yi.day7.proto.ProtoMessage.MessageResponse other = (com.yi.day7.proto.ProtoMessage.MessageResponse) obj;
 
       if (getResult()
           != other.getResult()) return false;
@@ -4369,69 +4369,69 @@ public final class MessageProto {
       return hash;
     }
 
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(byte[] data)
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseDelimitedFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageResponse parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4444,7 +4444,7 @@ public final class MessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.yi.day7.proto.MessageProto.MessageResponse prototype) {
+    public static Builder newBuilder(com.yi.day7.proto.ProtoMessage.MessageResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -4469,21 +4469,21 @@ public final class MessageProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.yi.day7.proto.MessageResponse)
-        com.yi.day7.proto.MessageProto.MessageResponseOrBuilder {
+        com.yi.day7.proto.ProtoMessage.MessageResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageResponse_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageResponse_fieldAccessorTable
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.yi.day7.proto.MessageProto.MessageResponse.class, com.yi.day7.proto.MessageProto.MessageResponse.Builder.class);
+                com.yi.day7.proto.ProtoMessage.MessageResponse.class, com.yi.day7.proto.ProtoMessage.MessageResponse.Builder.class);
       }
 
-      // Construct using com.yi.day7.proto.MessageProto.MessageResponse.newBuilder()
+      // Construct using com.yi.day7.proto.ProtoMessage.MessageResponse.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4519,17 +4519,17 @@ public final class MessageProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageResponse_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageResponse_descriptor;
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageResponse getDefaultInstanceForType() {
-        return com.yi.day7.proto.MessageProto.MessageResponse.getDefaultInstance();
+      public com.yi.day7.proto.ProtoMessage.MessageResponse getDefaultInstanceForType() {
+        return com.yi.day7.proto.ProtoMessage.MessageResponse.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageResponse build() {
-        com.yi.day7.proto.MessageProto.MessageResponse result = buildPartial();
+      public com.yi.day7.proto.ProtoMessage.MessageResponse build() {
+        com.yi.day7.proto.ProtoMessage.MessageResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4537,8 +4537,8 @@ public final class MessageProto {
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageResponse buildPartial() {
-        com.yi.day7.proto.MessageProto.MessageResponse result = new com.yi.day7.proto.MessageProto.MessageResponse(this);
+      public com.yi.day7.proto.ProtoMessage.MessageResponse buildPartial() {
+        com.yi.day7.proto.ProtoMessage.MessageResponse result = new com.yi.day7.proto.ProtoMessage.MessageResponse(this);
         result.result_ = result_;
         result.code_ = code_;
         result.info_ = info_;
@@ -4583,16 +4583,16 @@ public final class MessageProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.yi.day7.proto.MessageProto.MessageResponse) {
-          return mergeFrom((com.yi.day7.proto.MessageProto.MessageResponse)other);
+        if (other instanceof com.yi.day7.proto.ProtoMessage.MessageResponse) {
+          return mergeFrom((com.yi.day7.proto.ProtoMessage.MessageResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.yi.day7.proto.MessageProto.MessageResponse other) {
-        if (other == com.yi.day7.proto.MessageProto.MessageResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.yi.day7.proto.ProtoMessage.MessageResponse other) {
+        if (other == com.yi.day7.proto.ProtoMessage.MessageResponse.getDefaultInstance()) return this;
         if (other.getResult() != false) {
           setResult(other.getResult());
         }
@@ -4627,11 +4627,11 @@ public final class MessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.yi.day7.proto.MessageProto.MessageResponse parsedMessage = null;
+        com.yi.day7.proto.ProtoMessage.MessageResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.yi.day7.proto.MessageProto.MessageResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.yi.day7.proto.ProtoMessage.MessageResponse) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4888,12 +4888,12 @@ public final class MessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:com.yi.day7.proto.MessageResponse)
-    private static final com.yi.day7.proto.MessageProto.MessageResponse DEFAULT_INSTANCE;
+    private static final com.yi.day7.proto.ProtoMessage.MessageResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.yi.day7.proto.MessageProto.MessageResponse();
+      DEFAULT_INSTANCE = new com.yi.day7.proto.ProtoMessage.MessageResponse();
     }
 
-    public static com.yi.day7.proto.MessageProto.MessageResponse getDefaultInstance() {
+    public static com.yi.day7.proto.ProtoMessage.MessageResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4918,7 +4918,7 @@ public final class MessageProto {
     }
 
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageResponse getDefaultInstanceForType() {
+    public com.yi.day7.proto.ProtoMessage.MessageResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5059,15 +5059,15 @@ public final class MessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageNotification_descriptor;
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageNotification_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageNotification_fieldAccessorTable
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageNotification_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.yi.day7.proto.MessageProto.MessageNotification.class, com.yi.day7.proto.MessageProto.MessageNotification.Builder.class);
+              com.yi.day7.proto.ProtoMessage.MessageNotification.class, com.yi.day7.proto.ProtoMessage.MessageNotification.Builder.class);
     }
 
     public static final int MSGTYPE_FIELD_NUMBER = 1;
@@ -5227,10 +5227,10 @@ public final class MessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.yi.day7.proto.MessageProto.MessageNotification)) {
+      if (!(obj instanceof com.yi.day7.proto.ProtoMessage.MessageNotification)) {
         return super.equals(obj);
       }
-      com.yi.day7.proto.MessageProto.MessageNotification other = (com.yi.day7.proto.MessageProto.MessageNotification) obj;
+      com.yi.day7.proto.ProtoMessage.MessageNotification other = (com.yi.day7.proto.ProtoMessage.MessageNotification) obj;
 
       if (getMsgType()
           != other.getMsgType()) return false;
@@ -5264,69 +5264,69 @@ public final class MessageProto {
       return hash;
     }
 
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(byte[] data)
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseDelimitedFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseDelimitedFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.MessageNotification parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5339,7 +5339,7 @@ public final class MessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.yi.day7.proto.MessageProto.MessageNotification prototype) {
+    public static Builder newBuilder(com.yi.day7.proto.ProtoMessage.MessageNotification prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -5364,21 +5364,21 @@ public final class MessageProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.yi.day7.proto.MessageNotification)
-        com.yi.day7.proto.MessageProto.MessageNotificationOrBuilder {
+        com.yi.day7.proto.ProtoMessage.MessageNotificationOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageNotification_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageNotification_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageNotification_fieldAccessorTable
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageNotification_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.yi.day7.proto.MessageProto.MessageNotification.class, com.yi.day7.proto.MessageProto.MessageNotification.Builder.class);
+                com.yi.day7.proto.ProtoMessage.MessageNotification.class, com.yi.day7.proto.ProtoMessage.MessageNotification.Builder.class);
       }
 
-      // Construct using com.yi.day7.proto.MessageProto.MessageNotification.newBuilder()
+      // Construct using com.yi.day7.proto.ProtoMessage.MessageNotification.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5410,17 +5410,17 @@ public final class MessageProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_MessageNotification_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageNotification_descriptor;
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageNotification getDefaultInstanceForType() {
-        return com.yi.day7.proto.MessageProto.MessageNotification.getDefaultInstance();
+      public com.yi.day7.proto.ProtoMessage.MessageNotification getDefaultInstanceForType() {
+        return com.yi.day7.proto.ProtoMessage.MessageNotification.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageNotification build() {
-        com.yi.day7.proto.MessageProto.MessageNotification result = buildPartial();
+      public com.yi.day7.proto.ProtoMessage.MessageNotification build() {
+        com.yi.day7.proto.ProtoMessage.MessageNotification result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -5428,8 +5428,8 @@ public final class MessageProto {
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.MessageNotification buildPartial() {
-        com.yi.day7.proto.MessageProto.MessageNotification result = new com.yi.day7.proto.MessageProto.MessageNotification(this);
+      public com.yi.day7.proto.ProtoMessage.MessageNotification buildPartial() {
+        com.yi.day7.proto.ProtoMessage.MessageNotification result = new com.yi.day7.proto.ProtoMessage.MessageNotification(this);
         result.msgType_ = msgType_;
         result.sender_ = sender_;
         result.json_ = json_;
@@ -5472,16 +5472,16 @@ public final class MessageProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.yi.day7.proto.MessageProto.MessageNotification) {
-          return mergeFrom((com.yi.day7.proto.MessageProto.MessageNotification)other);
+        if (other instanceof com.yi.day7.proto.ProtoMessage.MessageNotification) {
+          return mergeFrom((com.yi.day7.proto.ProtoMessage.MessageNotification)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.yi.day7.proto.MessageProto.MessageNotification other) {
-        if (other == com.yi.day7.proto.MessageProto.MessageNotification.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.yi.day7.proto.ProtoMessage.MessageNotification other) {
+        if (other == com.yi.day7.proto.ProtoMessage.MessageNotification.getDefaultInstance()) return this;
         if (other.getMsgType() != 0) {
           setMsgType(other.getMsgType());
         }
@@ -5511,11 +5511,11 @@ public final class MessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.yi.day7.proto.MessageProto.MessageNotification parsedMessage = null;
+        com.yi.day7.proto.ProtoMessage.MessageNotification parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.yi.day7.proto.MessageProto.MessageNotification) e.getUnfinishedMessage();
+          parsedMessage = (com.yi.day7.proto.ProtoMessage.MessageNotification) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5758,12 +5758,12 @@ public final class MessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:com.yi.day7.proto.MessageNotification)
-    private static final com.yi.day7.proto.MessageProto.MessageNotification DEFAULT_INSTANCE;
+    private static final com.yi.day7.proto.ProtoMessage.MessageNotification DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.yi.day7.proto.MessageProto.MessageNotification();
+      DEFAULT_INSTANCE = new com.yi.day7.proto.ProtoMessage.MessageNotification();
     }
 
-    public static com.yi.day7.proto.MessageProto.MessageNotification getDefaultInstance() {
+    public static com.yi.day7.proto.ProtoMessage.MessageNotification getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5788,7 +5788,803 @@ public final class MessageProto {
     }
 
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageNotification getDefaultInstanceForType() {
+    public com.yi.day7.proto.ProtoMessage.MessageNotification getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface MessageHeartBeatOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.yi.day7.proto.MessageHeartBeat)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>uint32 seq = 1;</code>
+     * @return The seq.
+     */
+    int getSeq();
+
+    /**
+     * <code>string uid = 2;</code>
+     * @return The uid.
+     */
+    java.lang.String getUid();
+    /**
+     * <code>string uid = 2;</code>
+     * @return The bytes for uid.
+     */
+    com.google.protobuf.ByteString
+        getUidBytes();
+
+    /**
+     * <code>string json = 3;</code>
+     * @return The json.
+     */
+    java.lang.String getJson();
+    /**
+     * <code>string json = 3;</code>
+     * @return The bytes for json.
+     */
+    com.google.protobuf.ByteString
+        getJsonBytes();
+  }
+  /**
+   * <pre>
+   *心跳信息
+   * </pre>
+   *
+   * Protobuf type {@code com.yi.day7.proto.MessageHeartBeat}
+   */
+  public static final class MessageHeartBeat extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.yi.day7.proto.MessageHeartBeat)
+      MessageHeartBeatOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use MessageHeartBeat.newBuilder() to construct.
+    private MessageHeartBeat(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private MessageHeartBeat() {
+      uid_ = "";
+      json_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new MessageHeartBeat();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private MessageHeartBeat(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              seq_ = input.readUInt32();
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              uid_ = s;
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              json_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageHeartBeat_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageHeartBeat_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.yi.day7.proto.ProtoMessage.MessageHeartBeat.class, com.yi.day7.proto.ProtoMessage.MessageHeartBeat.Builder.class);
+    }
+
+    public static final int SEQ_FIELD_NUMBER = 1;
+    private int seq_;
+    /**
+     * <code>uint32 seq = 1;</code>
+     * @return The seq.
+     */
+    @java.lang.Override
+    public int getSeq() {
+      return seq_;
+    }
+
+    public static final int UID_FIELD_NUMBER = 2;
+    private volatile java.lang.Object uid_;
+    /**
+     * <code>string uid = 2;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public java.lang.String getUid() {
+      java.lang.Object ref = uid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        uid_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string uid = 2;</code>
+     * @return The bytes for uid.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getUidBytes() {
+      java.lang.Object ref = uid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        uid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int JSON_FIELD_NUMBER = 3;
+    private volatile java.lang.Object json_;
+    /**
+     * <code>string json = 3;</code>
+     * @return The json.
+     */
+    @java.lang.Override
+    public java.lang.String getJson() {
+      java.lang.Object ref = json_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        json_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string json = 3;</code>
+     * @return The bytes for json.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getJsonBytes() {
+      java.lang.Object ref = json_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        json_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (seq_ != 0) {
+        output.writeUInt32(1, seq_);
+      }
+      if (!getUidBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, uid_);
+      }
+      if (!getJsonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, json_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (seq_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, seq_);
+      }
+      if (!getUidBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, uid_);
+      }
+      if (!getJsonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, json_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.yi.day7.proto.ProtoMessage.MessageHeartBeat)) {
+        return super.equals(obj);
+      }
+      com.yi.day7.proto.ProtoMessage.MessageHeartBeat other = (com.yi.day7.proto.ProtoMessage.MessageHeartBeat) obj;
+
+      if (getSeq()
+          != other.getSeq()) return false;
+      if (!getUid()
+          .equals(other.getUid())) return false;
+      if (!getJson()
+          .equals(other.getJson())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + SEQ_FIELD_NUMBER;
+      hash = (53 * hash) + getSeq();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid().hashCode();
+      hash = (37 * hash) + JSON_FIELD_NUMBER;
+      hash = (53 * hash) + getJson().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.yi.day7.proto.ProtoMessage.MessageHeartBeat prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     *心跳信息
+     * </pre>
+     *
+     * Protobuf type {@code com.yi.day7.proto.MessageHeartBeat}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.yi.day7.proto.MessageHeartBeat)
+        com.yi.day7.proto.ProtoMessage.MessageHeartBeatOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageHeartBeat_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageHeartBeat_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.yi.day7.proto.ProtoMessage.MessageHeartBeat.class, com.yi.day7.proto.ProtoMessage.MessageHeartBeat.Builder.class);
+      }
+
+      // Construct using com.yi.day7.proto.ProtoMessage.MessageHeartBeat.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        seq_ = 0;
+
+        uid_ = "";
+
+        json_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_MessageHeartBeat_descriptor;
+      }
+
+      @java.lang.Override
+      public com.yi.day7.proto.ProtoMessage.MessageHeartBeat getDefaultInstanceForType() {
+        return com.yi.day7.proto.ProtoMessage.MessageHeartBeat.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.yi.day7.proto.ProtoMessage.MessageHeartBeat build() {
+        com.yi.day7.proto.ProtoMessage.MessageHeartBeat result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.yi.day7.proto.ProtoMessage.MessageHeartBeat buildPartial() {
+        com.yi.day7.proto.ProtoMessage.MessageHeartBeat result = new com.yi.day7.proto.ProtoMessage.MessageHeartBeat(this);
+        result.seq_ = seq_;
+        result.uid_ = uid_;
+        result.json_ = json_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.yi.day7.proto.ProtoMessage.MessageHeartBeat) {
+          return mergeFrom((com.yi.day7.proto.ProtoMessage.MessageHeartBeat)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.yi.day7.proto.ProtoMessage.MessageHeartBeat other) {
+        if (other == com.yi.day7.proto.ProtoMessage.MessageHeartBeat.getDefaultInstance()) return this;
+        if (other.getSeq() != 0) {
+          setSeq(other.getSeq());
+        }
+        if (!other.getUid().isEmpty()) {
+          uid_ = other.uid_;
+          onChanged();
+        }
+        if (!other.getJson().isEmpty()) {
+          json_ = other.json_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.yi.day7.proto.ProtoMessage.MessageHeartBeat parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.yi.day7.proto.ProtoMessage.MessageHeartBeat) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int seq_ ;
+      /**
+       * <code>uint32 seq = 1;</code>
+       * @return The seq.
+       */
+      @java.lang.Override
+      public int getSeq() {
+        return seq_;
+      }
+      /**
+       * <code>uint32 seq = 1;</code>
+       * @param value The seq to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSeq(int value) {
+        
+        seq_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 seq = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSeq() {
+        
+        seq_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object uid_ = "";
+      /**
+       * <code>string uid = 2;</code>
+       * @return The uid.
+       */
+      public java.lang.String getUid() {
+        java.lang.Object ref = uid_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          uid_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string uid = 2;</code>
+       * @return The bytes for uid.
+       */
+      public com.google.protobuf.ByteString
+          getUidBytes() {
+        java.lang.Object ref = uid_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          uid_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string uid = 2;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string uid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = getDefaultInstance().getUid();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string uid = 2;</code>
+       * @param value The bytes for uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUidBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object json_ = "";
+      /**
+       * <code>string json = 3;</code>
+       * @return The json.
+       */
+      public java.lang.String getJson() {
+        java.lang.Object ref = json_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          json_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string json = 3;</code>
+       * @return The bytes for json.
+       */
+      public com.google.protobuf.ByteString
+          getJsonBytes() {
+        java.lang.Object ref = json_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          json_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string json = 3;</code>
+       * @param value The json to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJson(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        json_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string json = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearJson() {
+        
+        json_ = getDefaultInstance().getJson();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string json = 3;</code>
+       * @param value The bytes for json to set.
+       * @return This builder for chaining.
+       */
+      public Builder setJsonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        json_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.yi.day7.proto.MessageHeartBeat)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.yi.day7.proto.MessageHeartBeat)
+    private static final com.yi.day7.proto.ProtoMessage.MessageHeartBeat DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.yi.day7.proto.ProtoMessage.MessageHeartBeat();
+    }
+
+    public static com.yi.day7.proto.ProtoMessage.MessageHeartBeat getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<MessageHeartBeat>
+        PARSER = new com.google.protobuf.AbstractParser<MessageHeartBeat>() {
+      @java.lang.Override
+      public MessageHeartBeat parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new MessageHeartBeat(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<MessageHeartBeat> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<MessageHeartBeat> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.yi.day7.proto.ProtoMessage.MessageHeartBeat getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5807,7 +6603,7 @@ public final class MessageProto {
      * <code>.com.yi.day7.proto.HeadType type = 1;</code>
      * @return The type.
      */
-    com.yi.day7.proto.MessageProto.HeadType getType();
+    com.yi.day7.proto.ProtoMessage.HeadType getType();
 
     /**
      * <code>uint64 sequence = 2;</code>
@@ -5828,34 +6624,34 @@ public final class MessageProto {
         getSessionIdBytes();
 
     /**
-     * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
-     * @return Whether the request field is set.
+     * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
+     * @return Whether the loginRequest field is set.
      */
-    boolean hasRequest();
+    boolean hasLoginRequest();
     /**
-     * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
-     * @return The request.
+     * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
+     * @return The loginRequest.
      */
-    com.yi.day7.proto.MessageProto.LoginRequest getRequest();
+    com.yi.day7.proto.ProtoMessage.LoginRequest getLoginRequest();
     /**
-     * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+     * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
      */
-    com.yi.day7.proto.MessageProto.LoginRequestOrBuilder getRequestOrBuilder();
+    com.yi.day7.proto.ProtoMessage.LoginRequestOrBuilder getLoginRequestOrBuilder();
 
     /**
-     * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
-     * @return Whether the response field is set.
+     * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
+     * @return Whether the loginResponse field is set.
      */
-    boolean hasResponse();
+    boolean hasLoginResponse();
     /**
-     * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
-     * @return The response.
+     * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
+     * @return The loginResponse.
      */
-    com.yi.day7.proto.MessageProto.LoginResponse getResponse();
+    com.yi.day7.proto.ProtoMessage.LoginResponse getLoginResponse();
     /**
-     * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+     * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
      */
-    com.yi.day7.proto.MessageProto.LoginResponseOrBuilder getResponseOrBuilder();
+    com.yi.day7.proto.ProtoMessage.LoginResponseOrBuilder getLoginResponseOrBuilder();
 
     /**
      * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
@@ -5866,11 +6662,11 @@ public final class MessageProto {
      * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
      * @return The messageRequest.
      */
-    com.yi.day7.proto.MessageProto.MessageRequest getMessageRequest();
+    com.yi.day7.proto.ProtoMessage.MessageRequest getMessageRequest();
     /**
      * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
      */
-    com.yi.day7.proto.MessageProto.MessageRequestOrBuilder getMessageRequestOrBuilder();
+    com.yi.day7.proto.ProtoMessage.MessageRequestOrBuilder getMessageRequestOrBuilder();
 
     /**
      * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
@@ -5881,11 +6677,11 @@ public final class MessageProto {
      * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
      * @return The messageResponse.
      */
-    com.yi.day7.proto.MessageProto.MessageResponse getMessageResponse();
+    com.yi.day7.proto.ProtoMessage.MessageResponse getMessageResponse();
     /**
      * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
      */
-    com.yi.day7.proto.MessageProto.MessageResponseOrBuilder getMessageResponseOrBuilder();
+    com.yi.day7.proto.ProtoMessage.MessageResponseOrBuilder getMessageResponseOrBuilder();
 
     /**
      * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
@@ -5896,11 +6692,26 @@ public final class MessageProto {
      * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
      * @return The notification.
      */
-    com.yi.day7.proto.MessageProto.MessageNotification getNotification();
+    com.yi.day7.proto.ProtoMessage.MessageNotification getNotification();
     /**
      * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
      */
-    com.yi.day7.proto.MessageProto.MessageNotificationOrBuilder getNotificationOrBuilder();
+    com.yi.day7.proto.ProtoMessage.MessageNotificationOrBuilder getNotificationOrBuilder();
+
+    /**
+     * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+     * @return Whether the heartBeat field is set.
+     */
+    boolean hasHeartBeat();
+    /**
+     * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+     * @return The heartBeat.
+     */
+    com.yi.day7.proto.ProtoMessage.MessageHeartBeat getHeartBeat();
+    /**
+     * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+     */
+    com.yi.day7.proto.ProtoMessage.MessageHeartBeatOrBuilder getHeartBeatOrBuilder();
   }
   /**
    * <pre>
@@ -5971,37 +6782,37 @@ public final class MessageProto {
               break;
             }
             case 34: {
-              com.yi.day7.proto.MessageProto.LoginRequest.Builder subBuilder = null;
-              if (request_ != null) {
-                subBuilder = request_.toBuilder();
+              com.yi.day7.proto.ProtoMessage.LoginRequest.Builder subBuilder = null;
+              if (loginRequest_ != null) {
+                subBuilder = loginRequest_.toBuilder();
               }
-              request_ = input.readMessage(com.yi.day7.proto.MessageProto.LoginRequest.parser(), extensionRegistry);
+              loginRequest_ = input.readMessage(com.yi.day7.proto.ProtoMessage.LoginRequest.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(request_);
-                request_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(loginRequest_);
+                loginRequest_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 42: {
-              com.yi.day7.proto.MessageProto.LoginResponse.Builder subBuilder = null;
-              if (response_ != null) {
-                subBuilder = response_.toBuilder();
+              com.yi.day7.proto.ProtoMessage.LoginResponse.Builder subBuilder = null;
+              if (loginResponse_ != null) {
+                subBuilder = loginResponse_.toBuilder();
               }
-              response_ = input.readMessage(com.yi.day7.proto.MessageProto.LoginResponse.parser(), extensionRegistry);
+              loginResponse_ = input.readMessage(com.yi.day7.proto.ProtoMessage.LoginResponse.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(response_);
-                response_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(loginResponse_);
+                loginResponse_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 50: {
-              com.yi.day7.proto.MessageProto.MessageRequest.Builder subBuilder = null;
+              com.yi.day7.proto.ProtoMessage.MessageRequest.Builder subBuilder = null;
               if (messageRequest_ != null) {
                 subBuilder = messageRequest_.toBuilder();
               }
-              messageRequest_ = input.readMessage(com.yi.day7.proto.MessageProto.MessageRequest.parser(), extensionRegistry);
+              messageRequest_ = input.readMessage(com.yi.day7.proto.ProtoMessage.MessageRequest.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(messageRequest_);
                 messageRequest_ = subBuilder.buildPartial();
@@ -6010,11 +6821,11 @@ public final class MessageProto {
               break;
             }
             case 58: {
-              com.yi.day7.proto.MessageProto.MessageResponse.Builder subBuilder = null;
+              com.yi.day7.proto.ProtoMessage.MessageResponse.Builder subBuilder = null;
               if (messageResponse_ != null) {
                 subBuilder = messageResponse_.toBuilder();
               }
-              messageResponse_ = input.readMessage(com.yi.day7.proto.MessageProto.MessageResponse.parser(), extensionRegistry);
+              messageResponse_ = input.readMessage(com.yi.day7.proto.ProtoMessage.MessageResponse.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(messageResponse_);
                 messageResponse_ = subBuilder.buildPartial();
@@ -6023,14 +6834,27 @@ public final class MessageProto {
               break;
             }
             case 66: {
-              com.yi.day7.proto.MessageProto.MessageNotification.Builder subBuilder = null;
+              com.yi.day7.proto.ProtoMessage.MessageNotification.Builder subBuilder = null;
               if (notification_ != null) {
                 subBuilder = notification_.toBuilder();
               }
-              notification_ = input.readMessage(com.yi.day7.proto.MessageProto.MessageNotification.parser(), extensionRegistry);
+              notification_ = input.readMessage(com.yi.day7.proto.ProtoMessage.MessageNotification.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(notification_);
                 notification_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 74: {
+              com.yi.day7.proto.ProtoMessage.MessageHeartBeat.Builder subBuilder = null;
+              if (heartBeat_ != null) {
+                subBuilder = heartBeat_.toBuilder();
+              }
+              heartBeat_ = input.readMessage(com.yi.day7.proto.ProtoMessage.MessageHeartBeat.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(heartBeat_);
+                heartBeat_ = subBuilder.buildPartial();
               }
 
               break;
@@ -6056,15 +6880,15 @@ public final class MessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_Message_descriptor;
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_Message_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_Message_fieldAccessorTable
+      return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_Message_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.yi.day7.proto.MessageProto.Message.class, com.yi.day7.proto.MessageProto.Message.Builder.class);
+              com.yi.day7.proto.ProtoMessage.Message.class, com.yi.day7.proto.ProtoMessage.Message.Builder.class);
     }
 
     public static final int TYPE_FIELD_NUMBER = 1;
@@ -6080,10 +6904,10 @@ public final class MessageProto {
      * <code>.com.yi.day7.proto.HeadType type = 1;</code>
      * @return The type.
      */
-    @java.lang.Override public com.yi.day7.proto.MessageProto.HeadType getType() {
+    @java.lang.Override public com.yi.day7.proto.ProtoMessage.HeadType getType() {
       @SuppressWarnings("deprecation")
-      com.yi.day7.proto.MessageProto.HeadType result = com.yi.day7.proto.MessageProto.HeadType.valueOf(type_);
-      return result == null ? com.yi.day7.proto.MessageProto.HeadType.UNRECOGNIZED : result;
+      com.yi.day7.proto.ProtoMessage.HeadType result = com.yi.day7.proto.ProtoMessage.HeadType.valueOf(type_);
+      return result == null ? com.yi.day7.proto.ProtoMessage.HeadType.UNRECOGNIZED : result;
     }
 
     public static final int SEQUENCE_FIELD_NUMBER = 2;
@@ -6135,60 +6959,60 @@ public final class MessageProto {
       }
     }
 
-    public static final int REQUEST_FIELD_NUMBER = 4;
-    private com.yi.day7.proto.MessageProto.LoginRequest request_;
+    public static final int LOGINREQUEST_FIELD_NUMBER = 4;
+    private com.yi.day7.proto.ProtoMessage.LoginRequest loginRequest_;
     /**
-     * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
-     * @return Whether the request field is set.
+     * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
+     * @return Whether the loginRequest field is set.
      */
     @java.lang.Override
-    public boolean hasRequest() {
-      return request_ != null;
+    public boolean hasLoginRequest() {
+      return loginRequest_ != null;
     }
     /**
-     * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
-     * @return The request.
+     * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
+     * @return The loginRequest.
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.LoginRequest getRequest() {
-      return request_ == null ? com.yi.day7.proto.MessageProto.LoginRequest.getDefaultInstance() : request_;
+    public com.yi.day7.proto.ProtoMessage.LoginRequest getLoginRequest() {
+      return loginRequest_ == null ? com.yi.day7.proto.ProtoMessage.LoginRequest.getDefaultInstance() : loginRequest_;
     }
     /**
-     * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+     * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.LoginRequestOrBuilder getRequestOrBuilder() {
-      return getRequest();
+    public com.yi.day7.proto.ProtoMessage.LoginRequestOrBuilder getLoginRequestOrBuilder() {
+      return getLoginRequest();
     }
 
-    public static final int RESPONSE_FIELD_NUMBER = 5;
-    private com.yi.day7.proto.MessageProto.LoginResponse response_;
+    public static final int LOGINRESPONSE_FIELD_NUMBER = 5;
+    private com.yi.day7.proto.ProtoMessage.LoginResponse loginResponse_;
     /**
-     * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
-     * @return Whether the response field is set.
+     * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
+     * @return Whether the loginResponse field is set.
      */
     @java.lang.Override
-    public boolean hasResponse() {
-      return response_ != null;
+    public boolean hasLoginResponse() {
+      return loginResponse_ != null;
     }
     /**
-     * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
-     * @return The response.
+     * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
+     * @return The loginResponse.
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.LoginResponse getResponse() {
-      return response_ == null ? com.yi.day7.proto.MessageProto.LoginResponse.getDefaultInstance() : response_;
+    public com.yi.day7.proto.ProtoMessage.LoginResponse getLoginResponse() {
+      return loginResponse_ == null ? com.yi.day7.proto.ProtoMessage.LoginResponse.getDefaultInstance() : loginResponse_;
     }
     /**
-     * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+     * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.LoginResponseOrBuilder getResponseOrBuilder() {
-      return getResponse();
+    public com.yi.day7.proto.ProtoMessage.LoginResponseOrBuilder getLoginResponseOrBuilder() {
+      return getLoginResponse();
     }
 
     public static final int MESSAGEREQUEST_FIELD_NUMBER = 6;
-    private com.yi.day7.proto.MessageProto.MessageRequest messageRequest_;
+    private com.yi.day7.proto.ProtoMessage.MessageRequest messageRequest_;
     /**
      * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
      * @return Whether the messageRequest field is set.
@@ -6202,19 +7026,19 @@ public final class MessageProto {
      * @return The messageRequest.
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageRequest getMessageRequest() {
-      return messageRequest_ == null ? com.yi.day7.proto.MessageProto.MessageRequest.getDefaultInstance() : messageRequest_;
+    public com.yi.day7.proto.ProtoMessage.MessageRequest getMessageRequest() {
+      return messageRequest_ == null ? com.yi.day7.proto.ProtoMessage.MessageRequest.getDefaultInstance() : messageRequest_;
     }
     /**
      * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageRequestOrBuilder getMessageRequestOrBuilder() {
+    public com.yi.day7.proto.ProtoMessage.MessageRequestOrBuilder getMessageRequestOrBuilder() {
       return getMessageRequest();
     }
 
     public static final int MESSAGERESPONSE_FIELD_NUMBER = 7;
-    private com.yi.day7.proto.MessageProto.MessageResponse messageResponse_;
+    private com.yi.day7.proto.ProtoMessage.MessageResponse messageResponse_;
     /**
      * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
      * @return Whether the messageResponse field is set.
@@ -6228,19 +7052,19 @@ public final class MessageProto {
      * @return The messageResponse.
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageResponse getMessageResponse() {
-      return messageResponse_ == null ? com.yi.day7.proto.MessageProto.MessageResponse.getDefaultInstance() : messageResponse_;
+    public com.yi.day7.proto.ProtoMessage.MessageResponse getMessageResponse() {
+      return messageResponse_ == null ? com.yi.day7.proto.ProtoMessage.MessageResponse.getDefaultInstance() : messageResponse_;
     }
     /**
      * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageResponseOrBuilder getMessageResponseOrBuilder() {
+    public com.yi.day7.proto.ProtoMessage.MessageResponseOrBuilder getMessageResponseOrBuilder() {
       return getMessageResponse();
     }
 
     public static final int NOTIFICATION_FIELD_NUMBER = 8;
-    private com.yi.day7.proto.MessageProto.MessageNotification notification_;
+    private com.yi.day7.proto.ProtoMessage.MessageNotification notification_;
     /**
      * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
      * @return Whether the notification field is set.
@@ -6254,15 +7078,41 @@ public final class MessageProto {
      * @return The notification.
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageNotification getNotification() {
-      return notification_ == null ? com.yi.day7.proto.MessageProto.MessageNotification.getDefaultInstance() : notification_;
+    public com.yi.day7.proto.ProtoMessage.MessageNotification getNotification() {
+      return notification_ == null ? com.yi.day7.proto.ProtoMessage.MessageNotification.getDefaultInstance() : notification_;
     }
     /**
      * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
      */
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.MessageNotificationOrBuilder getNotificationOrBuilder() {
+    public com.yi.day7.proto.ProtoMessage.MessageNotificationOrBuilder getNotificationOrBuilder() {
       return getNotification();
+    }
+
+    public static final int HEARTBEAT_FIELD_NUMBER = 9;
+    private com.yi.day7.proto.ProtoMessage.MessageHeartBeat heartBeat_;
+    /**
+     * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+     * @return Whether the heartBeat field is set.
+     */
+    @java.lang.Override
+    public boolean hasHeartBeat() {
+      return heartBeat_ != null;
+    }
+    /**
+     * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+     * @return The heartBeat.
+     */
+    @java.lang.Override
+    public com.yi.day7.proto.ProtoMessage.MessageHeartBeat getHeartBeat() {
+      return heartBeat_ == null ? com.yi.day7.proto.ProtoMessage.MessageHeartBeat.getDefaultInstance() : heartBeat_;
+    }
+    /**
+     * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+     */
+    @java.lang.Override
+    public com.yi.day7.proto.ProtoMessage.MessageHeartBeatOrBuilder getHeartBeatOrBuilder() {
+      return getHeartBeat();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -6279,7 +7129,7 @@ public final class MessageProto {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (type_ != com.yi.day7.proto.MessageProto.HeadType.LOGIN_REQUEST.getNumber()) {
+      if (type_ != com.yi.day7.proto.ProtoMessage.HeadType.LOGIN_REQUEST.getNumber()) {
         output.writeEnum(1, type_);
       }
       if (sequence_ != 0L) {
@@ -6288,11 +7138,11 @@ public final class MessageProto {
       if (!getSessionIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, sessionId_);
       }
-      if (request_ != null) {
-        output.writeMessage(4, getRequest());
+      if (loginRequest_ != null) {
+        output.writeMessage(4, getLoginRequest());
       }
-      if (response_ != null) {
-        output.writeMessage(5, getResponse());
+      if (loginResponse_ != null) {
+        output.writeMessage(5, getLoginResponse());
       }
       if (messageRequest_ != null) {
         output.writeMessage(6, getMessageRequest());
@@ -6303,6 +7153,9 @@ public final class MessageProto {
       if (notification_ != null) {
         output.writeMessage(8, getNotification());
       }
+      if (heartBeat_ != null) {
+        output.writeMessage(9, getHeartBeat());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -6312,7 +7165,7 @@ public final class MessageProto {
       if (size != -1) return size;
 
       size = 0;
-      if (type_ != com.yi.day7.proto.MessageProto.HeadType.LOGIN_REQUEST.getNumber()) {
+      if (type_ != com.yi.day7.proto.ProtoMessage.HeadType.LOGIN_REQUEST.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, type_);
       }
@@ -6323,13 +7176,13 @@ public final class MessageProto {
       if (!getSessionIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, sessionId_);
       }
-      if (request_ != null) {
+      if (loginRequest_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getRequest());
+          .computeMessageSize(4, getLoginRequest());
       }
-      if (response_ != null) {
+      if (loginResponse_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getResponse());
+          .computeMessageSize(5, getLoginResponse());
       }
       if (messageRequest_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -6343,6 +7196,10 @@ public final class MessageProto {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, getNotification());
       }
+      if (heartBeat_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getHeartBeat());
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -6353,25 +7210,25 @@ public final class MessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.yi.day7.proto.MessageProto.Message)) {
+      if (!(obj instanceof com.yi.day7.proto.ProtoMessage.Message)) {
         return super.equals(obj);
       }
-      com.yi.day7.proto.MessageProto.Message other = (com.yi.day7.proto.MessageProto.Message) obj;
+      com.yi.day7.proto.ProtoMessage.Message other = (com.yi.day7.proto.ProtoMessage.Message) obj;
 
       if (type_ != other.type_) return false;
       if (getSequence()
           != other.getSequence()) return false;
       if (!getSessionId()
           .equals(other.getSessionId())) return false;
-      if (hasRequest() != other.hasRequest()) return false;
-      if (hasRequest()) {
-        if (!getRequest()
-            .equals(other.getRequest())) return false;
+      if (hasLoginRequest() != other.hasLoginRequest()) return false;
+      if (hasLoginRequest()) {
+        if (!getLoginRequest()
+            .equals(other.getLoginRequest())) return false;
       }
-      if (hasResponse() != other.hasResponse()) return false;
-      if (hasResponse()) {
-        if (!getResponse()
-            .equals(other.getResponse())) return false;
+      if (hasLoginResponse() != other.hasLoginResponse()) return false;
+      if (hasLoginResponse()) {
+        if (!getLoginResponse()
+            .equals(other.getLoginResponse())) return false;
       }
       if (hasMessageRequest() != other.hasMessageRequest()) return false;
       if (hasMessageRequest()) {
@@ -6387,6 +7244,11 @@ public final class MessageProto {
       if (hasNotification()) {
         if (!getNotification()
             .equals(other.getNotification())) return false;
+      }
+      if (hasHeartBeat() != other.hasHeartBeat()) return false;
+      if (hasHeartBeat()) {
+        if (!getHeartBeat()
+            .equals(other.getHeartBeat())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -6406,13 +7268,13 @@ public final class MessageProto {
           getSequence());
       hash = (37 * hash) + SESSIONID_FIELD_NUMBER;
       hash = (53 * hash) + getSessionId().hashCode();
-      if (hasRequest()) {
-        hash = (37 * hash) + REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getRequest().hashCode();
+      if (hasLoginRequest()) {
+        hash = (37 * hash) + LOGINREQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getLoginRequest().hashCode();
       }
-      if (hasResponse()) {
-        hash = (37 * hash) + RESPONSE_FIELD_NUMBER;
-        hash = (53 * hash) + getResponse().hashCode();
+      if (hasLoginResponse()) {
+        hash = (37 * hash) + LOGINRESPONSE_FIELD_NUMBER;
+        hash = (53 * hash) + getLoginResponse().hashCode();
       }
       if (hasMessageRequest()) {
         hash = (37 * hash) + MESSAGEREQUEST_FIELD_NUMBER;
@@ -6426,74 +7288,78 @@ public final class MessageProto {
         hash = (37 * hash) + NOTIFICATION_FIELD_NUMBER;
         hash = (53 * hash) + getNotification().hashCode();
       }
+      if (hasHeartBeat()) {
+        hash = (37 * hash) + HEARTBEAT_FIELD_NUMBER;
+        hash = (53 * hash) + getHeartBeat().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(byte[] data)
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseDelimitedFrom(java.io.InputStream input)
+    public static com.yi.day7.proto.ProtoMessage.Message parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseDelimitedFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.yi.day7.proto.MessageProto.Message parseFrom(
+    public static com.yi.day7.proto.ProtoMessage.Message parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6506,7 +7372,7 @@ public final class MessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.yi.day7.proto.MessageProto.Message prototype) {
+    public static Builder newBuilder(com.yi.day7.proto.ProtoMessage.Message prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -6531,21 +7397,21 @@ public final class MessageProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:com.yi.day7.proto.Message)
-        com.yi.day7.proto.MessageProto.MessageOrBuilder {
+        com.yi.day7.proto.ProtoMessage.MessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_Message_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_Message_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_Message_fieldAccessorTable
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_Message_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.yi.day7.proto.MessageProto.Message.class, com.yi.day7.proto.MessageProto.Message.Builder.class);
+                com.yi.day7.proto.ProtoMessage.Message.class, com.yi.day7.proto.ProtoMessage.Message.Builder.class);
       }
 
-      // Construct using com.yi.day7.proto.MessageProto.Message.newBuilder()
+      // Construct using com.yi.day7.proto.ProtoMessage.Message.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6569,17 +7435,17 @@ public final class MessageProto {
 
         sessionId_ = "";
 
-        if (requestBuilder_ == null) {
-          request_ = null;
+        if (loginRequestBuilder_ == null) {
+          loginRequest_ = null;
         } else {
-          request_ = null;
-          requestBuilder_ = null;
+          loginRequest_ = null;
+          loginRequestBuilder_ = null;
         }
-        if (responseBuilder_ == null) {
-          response_ = null;
+        if (loginResponseBuilder_ == null) {
+          loginResponse_ = null;
         } else {
-          response_ = null;
-          responseBuilder_ = null;
+          loginResponse_ = null;
+          loginResponseBuilder_ = null;
         }
         if (messageRequestBuilder_ == null) {
           messageRequest_ = null;
@@ -6599,23 +7465,29 @@ public final class MessageProto {
           notification_ = null;
           notificationBuilder_ = null;
         }
+        if (heartBeatBuilder_ == null) {
+          heartBeat_ = null;
+        } else {
+          heartBeat_ = null;
+          heartBeatBuilder_ = null;
+        }
         return this;
       }
 
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.yi.day7.proto.MessageProto.internal_static_com_yi_day7_proto_Message_descriptor;
+        return com.yi.day7.proto.ProtoMessage.internal_static_com_yi_day7_proto_Message_descriptor;
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.Message getDefaultInstanceForType() {
-        return com.yi.day7.proto.MessageProto.Message.getDefaultInstance();
+      public com.yi.day7.proto.ProtoMessage.Message getDefaultInstanceForType() {
+        return com.yi.day7.proto.ProtoMessage.Message.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.Message build() {
-        com.yi.day7.proto.MessageProto.Message result = buildPartial();
+      public com.yi.day7.proto.ProtoMessage.Message build() {
+        com.yi.day7.proto.ProtoMessage.Message result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -6623,20 +7495,20 @@ public final class MessageProto {
       }
 
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.Message buildPartial() {
-        com.yi.day7.proto.MessageProto.Message result = new com.yi.day7.proto.MessageProto.Message(this);
+      public com.yi.day7.proto.ProtoMessage.Message buildPartial() {
+        com.yi.day7.proto.ProtoMessage.Message result = new com.yi.day7.proto.ProtoMessage.Message(this);
         result.type_ = type_;
         result.sequence_ = sequence_;
         result.sessionId_ = sessionId_;
-        if (requestBuilder_ == null) {
-          result.request_ = request_;
+        if (loginRequestBuilder_ == null) {
+          result.loginRequest_ = loginRequest_;
         } else {
-          result.request_ = requestBuilder_.build();
+          result.loginRequest_ = loginRequestBuilder_.build();
         }
-        if (responseBuilder_ == null) {
-          result.response_ = response_;
+        if (loginResponseBuilder_ == null) {
+          result.loginResponse_ = loginResponse_;
         } else {
-          result.response_ = responseBuilder_.build();
+          result.loginResponse_ = loginResponseBuilder_.build();
         }
         if (messageRequestBuilder_ == null) {
           result.messageRequest_ = messageRequest_;
@@ -6652,6 +7524,11 @@ public final class MessageProto {
           result.notification_ = notification_;
         } else {
           result.notification_ = notificationBuilder_.build();
+        }
+        if (heartBeatBuilder_ == null) {
+          result.heartBeat_ = heartBeat_;
+        } else {
+          result.heartBeat_ = heartBeatBuilder_.build();
         }
         onBuilt();
         return result;
@@ -6691,16 +7568,16 @@ public final class MessageProto {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.yi.day7.proto.MessageProto.Message) {
-          return mergeFrom((com.yi.day7.proto.MessageProto.Message)other);
+        if (other instanceof com.yi.day7.proto.ProtoMessage.Message) {
+          return mergeFrom((com.yi.day7.proto.ProtoMessage.Message)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.yi.day7.proto.MessageProto.Message other) {
-        if (other == com.yi.day7.proto.MessageProto.Message.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.yi.day7.proto.ProtoMessage.Message other) {
+        if (other == com.yi.day7.proto.ProtoMessage.Message.getDefaultInstance()) return this;
         if (other.type_ != 0) {
           setTypeValue(other.getTypeValue());
         }
@@ -6711,11 +7588,11 @@ public final class MessageProto {
           sessionId_ = other.sessionId_;
           onChanged();
         }
-        if (other.hasRequest()) {
-          mergeRequest(other.getRequest());
+        if (other.hasLoginRequest()) {
+          mergeLoginRequest(other.getLoginRequest());
         }
-        if (other.hasResponse()) {
-          mergeResponse(other.getResponse());
+        if (other.hasLoginResponse()) {
+          mergeLoginResponse(other.getLoginResponse());
         }
         if (other.hasMessageRequest()) {
           mergeMessageRequest(other.getMessageRequest());
@@ -6725,6 +7602,9 @@ public final class MessageProto {
         }
         if (other.hasNotification()) {
           mergeNotification(other.getNotification());
+        }
+        if (other.hasHeartBeat()) {
+          mergeHeartBeat(other.getHeartBeat());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -6741,11 +7621,11 @@ public final class MessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.yi.day7.proto.MessageProto.Message parsedMessage = null;
+        com.yi.day7.proto.ProtoMessage.Message parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.yi.day7.proto.MessageProto.Message) e.getUnfinishedMessage();
+          parsedMessage = (com.yi.day7.proto.ProtoMessage.Message) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -6779,17 +7659,17 @@ public final class MessageProto {
        * @return The type.
        */
       @java.lang.Override
-      public com.yi.day7.proto.MessageProto.HeadType getType() {
+      public com.yi.day7.proto.ProtoMessage.HeadType getType() {
         @SuppressWarnings("deprecation")
-        com.yi.day7.proto.MessageProto.HeadType result = com.yi.day7.proto.MessageProto.HeadType.valueOf(type_);
-        return result == null ? com.yi.day7.proto.MessageProto.HeadType.UNRECOGNIZED : result;
+        com.yi.day7.proto.ProtoMessage.HeadType result = com.yi.day7.proto.ProtoMessage.HeadType.valueOf(type_);
+        return result == null ? com.yi.day7.proto.ProtoMessage.HeadType.UNRECOGNIZED : result;
       }
       /**
        * <code>.com.yi.day7.proto.HeadType type = 1;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
-      public Builder setType(com.yi.day7.proto.MessageProto.HeadType value) {
+      public Builder setType(com.yi.day7.proto.ProtoMessage.HeadType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -6916,247 +7796,247 @@ public final class MessageProto {
         return this;
       }
 
-      private com.yi.day7.proto.MessageProto.LoginRequest request_;
+      private com.yi.day7.proto.ProtoMessage.LoginRequest loginRequest_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.LoginRequest, com.yi.day7.proto.MessageProto.LoginRequest.Builder, com.yi.day7.proto.MessageProto.LoginRequestOrBuilder> requestBuilder_;
+          com.yi.day7.proto.ProtoMessage.LoginRequest, com.yi.day7.proto.ProtoMessage.LoginRequest.Builder, com.yi.day7.proto.ProtoMessage.LoginRequestOrBuilder> loginRequestBuilder_;
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
-       * @return Whether the request field is set.
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
+       * @return Whether the loginRequest field is set.
        */
-      public boolean hasRequest() {
-        return requestBuilder_ != null || request_ != null;
+      public boolean hasLoginRequest() {
+        return loginRequestBuilder_ != null || loginRequest_ != null;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
-       * @return The request.
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
+       * @return The loginRequest.
        */
-      public com.yi.day7.proto.MessageProto.LoginRequest getRequest() {
-        if (requestBuilder_ == null) {
-          return request_ == null ? com.yi.day7.proto.MessageProto.LoginRequest.getDefaultInstance() : request_;
+      public com.yi.day7.proto.ProtoMessage.LoginRequest getLoginRequest() {
+        if (loginRequestBuilder_ == null) {
+          return loginRequest_ == null ? com.yi.day7.proto.ProtoMessage.LoginRequest.getDefaultInstance() : loginRequest_;
         } else {
-          return requestBuilder_.getMessage();
+          return loginRequestBuilder_.getMessage();
         }
       }
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
        */
-      public Builder setRequest(com.yi.day7.proto.MessageProto.LoginRequest value) {
-        if (requestBuilder_ == null) {
+      public Builder setLoginRequest(com.yi.day7.proto.ProtoMessage.LoginRequest value) {
+        if (loginRequestBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          request_ = value;
+          loginRequest_ = value;
           onChanged();
         } else {
-          requestBuilder_.setMessage(value);
+          loginRequestBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
        */
-      public Builder setRequest(
-          com.yi.day7.proto.MessageProto.LoginRequest.Builder builderForValue) {
-        if (requestBuilder_ == null) {
-          request_ = builderForValue.build();
+      public Builder setLoginRequest(
+          com.yi.day7.proto.ProtoMessage.LoginRequest.Builder builderForValue) {
+        if (loginRequestBuilder_ == null) {
+          loginRequest_ = builderForValue.build();
           onChanged();
         } else {
-          requestBuilder_.setMessage(builderForValue.build());
+          loginRequestBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
        */
-      public Builder mergeRequest(com.yi.day7.proto.MessageProto.LoginRequest value) {
-        if (requestBuilder_ == null) {
-          if (request_ != null) {
-            request_ =
-              com.yi.day7.proto.MessageProto.LoginRequest.newBuilder(request_).mergeFrom(value).buildPartial();
+      public Builder mergeLoginRequest(com.yi.day7.proto.ProtoMessage.LoginRequest value) {
+        if (loginRequestBuilder_ == null) {
+          if (loginRequest_ != null) {
+            loginRequest_ =
+              com.yi.day7.proto.ProtoMessage.LoginRequest.newBuilder(loginRequest_).mergeFrom(value).buildPartial();
           } else {
-            request_ = value;
+            loginRequest_ = value;
           }
           onChanged();
         } else {
-          requestBuilder_.mergeFrom(value);
+          loginRequestBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
        */
-      public Builder clearRequest() {
-        if (requestBuilder_ == null) {
-          request_ = null;
+      public Builder clearLoginRequest() {
+        if (loginRequestBuilder_ == null) {
+          loginRequest_ = null;
           onChanged();
         } else {
-          request_ = null;
-          requestBuilder_ = null;
+          loginRequest_ = null;
+          loginRequestBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
        */
-      public com.yi.day7.proto.MessageProto.LoginRequest.Builder getRequestBuilder() {
+      public com.yi.day7.proto.ProtoMessage.LoginRequest.Builder getLoginRequestBuilder() {
         
         onChanged();
-        return getRequestFieldBuilder().getBuilder();
+        return getLoginRequestFieldBuilder().getBuilder();
       }
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
        */
-      public com.yi.day7.proto.MessageProto.LoginRequestOrBuilder getRequestOrBuilder() {
-        if (requestBuilder_ != null) {
-          return requestBuilder_.getMessageOrBuilder();
+      public com.yi.day7.proto.ProtoMessage.LoginRequestOrBuilder getLoginRequestOrBuilder() {
+        if (loginRequestBuilder_ != null) {
+          return loginRequestBuilder_.getMessageOrBuilder();
         } else {
-          return request_ == null ?
-              com.yi.day7.proto.MessageProto.LoginRequest.getDefaultInstance() : request_;
+          return loginRequest_ == null ?
+              com.yi.day7.proto.ProtoMessage.LoginRequest.getDefaultInstance() : loginRequest_;
         }
       }
       /**
-       * <code>.com.yi.day7.proto.LoginRequest request = 4;</code>
+       * <code>.com.yi.day7.proto.LoginRequest loginRequest = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.LoginRequest, com.yi.day7.proto.MessageProto.LoginRequest.Builder, com.yi.day7.proto.MessageProto.LoginRequestOrBuilder> 
-          getRequestFieldBuilder() {
-        if (requestBuilder_ == null) {
-          requestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.yi.day7.proto.MessageProto.LoginRequest, com.yi.day7.proto.MessageProto.LoginRequest.Builder, com.yi.day7.proto.MessageProto.LoginRequestOrBuilder>(
-                  getRequest(),
+          com.yi.day7.proto.ProtoMessage.LoginRequest, com.yi.day7.proto.ProtoMessage.LoginRequest.Builder, com.yi.day7.proto.ProtoMessage.LoginRequestOrBuilder> 
+          getLoginRequestFieldBuilder() {
+        if (loginRequestBuilder_ == null) {
+          loginRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.yi.day7.proto.ProtoMessage.LoginRequest, com.yi.day7.proto.ProtoMessage.LoginRequest.Builder, com.yi.day7.proto.ProtoMessage.LoginRequestOrBuilder>(
+                  getLoginRequest(),
                   getParentForChildren(),
                   isClean());
-          request_ = null;
+          loginRequest_ = null;
         }
-        return requestBuilder_;
+        return loginRequestBuilder_;
       }
 
-      private com.yi.day7.proto.MessageProto.LoginResponse response_;
+      private com.yi.day7.proto.ProtoMessage.LoginResponse loginResponse_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.LoginResponse, com.yi.day7.proto.MessageProto.LoginResponse.Builder, com.yi.day7.proto.MessageProto.LoginResponseOrBuilder> responseBuilder_;
+          com.yi.day7.proto.ProtoMessage.LoginResponse, com.yi.day7.proto.ProtoMessage.LoginResponse.Builder, com.yi.day7.proto.ProtoMessage.LoginResponseOrBuilder> loginResponseBuilder_;
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
-       * @return Whether the response field is set.
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
+       * @return Whether the loginResponse field is set.
        */
-      public boolean hasResponse() {
-        return responseBuilder_ != null || response_ != null;
+      public boolean hasLoginResponse() {
+        return loginResponseBuilder_ != null || loginResponse_ != null;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
-       * @return The response.
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
+       * @return The loginResponse.
        */
-      public com.yi.day7.proto.MessageProto.LoginResponse getResponse() {
-        if (responseBuilder_ == null) {
-          return response_ == null ? com.yi.day7.proto.MessageProto.LoginResponse.getDefaultInstance() : response_;
+      public com.yi.day7.proto.ProtoMessage.LoginResponse getLoginResponse() {
+        if (loginResponseBuilder_ == null) {
+          return loginResponse_ == null ? com.yi.day7.proto.ProtoMessage.LoginResponse.getDefaultInstance() : loginResponse_;
         } else {
-          return responseBuilder_.getMessage();
+          return loginResponseBuilder_.getMessage();
         }
       }
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
        */
-      public Builder setResponse(com.yi.day7.proto.MessageProto.LoginResponse value) {
-        if (responseBuilder_ == null) {
+      public Builder setLoginResponse(com.yi.day7.proto.ProtoMessage.LoginResponse value) {
+        if (loginResponseBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          response_ = value;
+          loginResponse_ = value;
           onChanged();
         } else {
-          responseBuilder_.setMessage(value);
+          loginResponseBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
        */
-      public Builder setResponse(
-          com.yi.day7.proto.MessageProto.LoginResponse.Builder builderForValue) {
-        if (responseBuilder_ == null) {
-          response_ = builderForValue.build();
+      public Builder setLoginResponse(
+          com.yi.day7.proto.ProtoMessage.LoginResponse.Builder builderForValue) {
+        if (loginResponseBuilder_ == null) {
+          loginResponse_ = builderForValue.build();
           onChanged();
         } else {
-          responseBuilder_.setMessage(builderForValue.build());
+          loginResponseBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
        */
-      public Builder mergeResponse(com.yi.day7.proto.MessageProto.LoginResponse value) {
-        if (responseBuilder_ == null) {
-          if (response_ != null) {
-            response_ =
-              com.yi.day7.proto.MessageProto.LoginResponse.newBuilder(response_).mergeFrom(value).buildPartial();
+      public Builder mergeLoginResponse(com.yi.day7.proto.ProtoMessage.LoginResponse value) {
+        if (loginResponseBuilder_ == null) {
+          if (loginResponse_ != null) {
+            loginResponse_ =
+              com.yi.day7.proto.ProtoMessage.LoginResponse.newBuilder(loginResponse_).mergeFrom(value).buildPartial();
           } else {
-            response_ = value;
+            loginResponse_ = value;
           }
           onChanged();
         } else {
-          responseBuilder_.mergeFrom(value);
+          loginResponseBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
        */
-      public Builder clearResponse() {
-        if (responseBuilder_ == null) {
-          response_ = null;
+      public Builder clearLoginResponse() {
+        if (loginResponseBuilder_ == null) {
+          loginResponse_ = null;
           onChanged();
         } else {
-          response_ = null;
-          responseBuilder_ = null;
+          loginResponse_ = null;
+          loginResponseBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
        */
-      public com.yi.day7.proto.MessageProto.LoginResponse.Builder getResponseBuilder() {
+      public com.yi.day7.proto.ProtoMessage.LoginResponse.Builder getLoginResponseBuilder() {
         
         onChanged();
-        return getResponseFieldBuilder().getBuilder();
+        return getLoginResponseFieldBuilder().getBuilder();
       }
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
        */
-      public com.yi.day7.proto.MessageProto.LoginResponseOrBuilder getResponseOrBuilder() {
-        if (responseBuilder_ != null) {
-          return responseBuilder_.getMessageOrBuilder();
+      public com.yi.day7.proto.ProtoMessage.LoginResponseOrBuilder getLoginResponseOrBuilder() {
+        if (loginResponseBuilder_ != null) {
+          return loginResponseBuilder_.getMessageOrBuilder();
         } else {
-          return response_ == null ?
-              com.yi.day7.proto.MessageProto.LoginResponse.getDefaultInstance() : response_;
+          return loginResponse_ == null ?
+              com.yi.day7.proto.ProtoMessage.LoginResponse.getDefaultInstance() : loginResponse_;
         }
       }
       /**
-       * <code>.com.yi.day7.proto.LoginResponse response = 5;</code>
+       * <code>.com.yi.day7.proto.LoginResponse loginResponse = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.LoginResponse, com.yi.day7.proto.MessageProto.LoginResponse.Builder, com.yi.day7.proto.MessageProto.LoginResponseOrBuilder> 
-          getResponseFieldBuilder() {
-        if (responseBuilder_ == null) {
-          responseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.yi.day7.proto.MessageProto.LoginResponse, com.yi.day7.proto.MessageProto.LoginResponse.Builder, com.yi.day7.proto.MessageProto.LoginResponseOrBuilder>(
-                  getResponse(),
+          com.yi.day7.proto.ProtoMessage.LoginResponse, com.yi.day7.proto.ProtoMessage.LoginResponse.Builder, com.yi.day7.proto.ProtoMessage.LoginResponseOrBuilder> 
+          getLoginResponseFieldBuilder() {
+        if (loginResponseBuilder_ == null) {
+          loginResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.yi.day7.proto.ProtoMessage.LoginResponse, com.yi.day7.proto.ProtoMessage.LoginResponse.Builder, com.yi.day7.proto.ProtoMessage.LoginResponseOrBuilder>(
+                  getLoginResponse(),
                   getParentForChildren(),
                   isClean());
-          response_ = null;
+          loginResponse_ = null;
         }
-        return responseBuilder_;
+        return loginResponseBuilder_;
       }
 
-      private com.yi.day7.proto.MessageProto.MessageRequest messageRequest_;
+      private com.yi.day7.proto.ProtoMessage.MessageRequest messageRequest_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.MessageRequest, com.yi.day7.proto.MessageProto.MessageRequest.Builder, com.yi.day7.proto.MessageProto.MessageRequestOrBuilder> messageRequestBuilder_;
+          com.yi.day7.proto.ProtoMessage.MessageRequest, com.yi.day7.proto.ProtoMessage.MessageRequest.Builder, com.yi.day7.proto.ProtoMessage.MessageRequestOrBuilder> messageRequestBuilder_;
       /**
        * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
        * @return Whether the messageRequest field is set.
@@ -7168,9 +8048,9 @@ public final class MessageProto {
        * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
        * @return The messageRequest.
        */
-      public com.yi.day7.proto.MessageProto.MessageRequest getMessageRequest() {
+      public com.yi.day7.proto.ProtoMessage.MessageRequest getMessageRequest() {
         if (messageRequestBuilder_ == null) {
-          return messageRequest_ == null ? com.yi.day7.proto.MessageProto.MessageRequest.getDefaultInstance() : messageRequest_;
+          return messageRequest_ == null ? com.yi.day7.proto.ProtoMessage.MessageRequest.getDefaultInstance() : messageRequest_;
         } else {
           return messageRequestBuilder_.getMessage();
         }
@@ -7178,7 +8058,7 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
        */
-      public Builder setMessageRequest(com.yi.day7.proto.MessageProto.MessageRequest value) {
+      public Builder setMessageRequest(com.yi.day7.proto.ProtoMessage.MessageRequest value) {
         if (messageRequestBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7195,7 +8075,7 @@ public final class MessageProto {
        * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
        */
       public Builder setMessageRequest(
-          com.yi.day7.proto.MessageProto.MessageRequest.Builder builderForValue) {
+          com.yi.day7.proto.ProtoMessage.MessageRequest.Builder builderForValue) {
         if (messageRequestBuilder_ == null) {
           messageRequest_ = builderForValue.build();
           onChanged();
@@ -7208,11 +8088,11 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
        */
-      public Builder mergeMessageRequest(com.yi.day7.proto.MessageProto.MessageRequest value) {
+      public Builder mergeMessageRequest(com.yi.day7.proto.ProtoMessage.MessageRequest value) {
         if (messageRequestBuilder_ == null) {
           if (messageRequest_ != null) {
             messageRequest_ =
-              com.yi.day7.proto.MessageProto.MessageRequest.newBuilder(messageRequest_).mergeFrom(value).buildPartial();
+              com.yi.day7.proto.ProtoMessage.MessageRequest.newBuilder(messageRequest_).mergeFrom(value).buildPartial();
           } else {
             messageRequest_ = value;
           }
@@ -7240,7 +8120,7 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
        */
-      public com.yi.day7.proto.MessageProto.MessageRequest.Builder getMessageRequestBuilder() {
+      public com.yi.day7.proto.ProtoMessage.MessageRequest.Builder getMessageRequestBuilder() {
         
         onChanged();
         return getMessageRequestFieldBuilder().getBuilder();
@@ -7248,23 +8128,23 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
        */
-      public com.yi.day7.proto.MessageProto.MessageRequestOrBuilder getMessageRequestOrBuilder() {
+      public com.yi.day7.proto.ProtoMessage.MessageRequestOrBuilder getMessageRequestOrBuilder() {
         if (messageRequestBuilder_ != null) {
           return messageRequestBuilder_.getMessageOrBuilder();
         } else {
           return messageRequest_ == null ?
-              com.yi.day7.proto.MessageProto.MessageRequest.getDefaultInstance() : messageRequest_;
+              com.yi.day7.proto.ProtoMessage.MessageRequest.getDefaultInstance() : messageRequest_;
         }
       }
       /**
        * <code>.com.yi.day7.proto.MessageRequest messageRequest = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.MessageRequest, com.yi.day7.proto.MessageProto.MessageRequest.Builder, com.yi.day7.proto.MessageProto.MessageRequestOrBuilder> 
+          com.yi.day7.proto.ProtoMessage.MessageRequest, com.yi.day7.proto.ProtoMessage.MessageRequest.Builder, com.yi.day7.proto.ProtoMessage.MessageRequestOrBuilder> 
           getMessageRequestFieldBuilder() {
         if (messageRequestBuilder_ == null) {
           messageRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.yi.day7.proto.MessageProto.MessageRequest, com.yi.day7.proto.MessageProto.MessageRequest.Builder, com.yi.day7.proto.MessageProto.MessageRequestOrBuilder>(
+              com.yi.day7.proto.ProtoMessage.MessageRequest, com.yi.day7.proto.ProtoMessage.MessageRequest.Builder, com.yi.day7.proto.ProtoMessage.MessageRequestOrBuilder>(
                   getMessageRequest(),
                   getParentForChildren(),
                   isClean());
@@ -7273,9 +8153,9 @@ public final class MessageProto {
         return messageRequestBuilder_;
       }
 
-      private com.yi.day7.proto.MessageProto.MessageResponse messageResponse_;
+      private com.yi.day7.proto.ProtoMessage.MessageResponse messageResponse_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.MessageResponse, com.yi.day7.proto.MessageProto.MessageResponse.Builder, com.yi.day7.proto.MessageProto.MessageResponseOrBuilder> messageResponseBuilder_;
+          com.yi.day7.proto.ProtoMessage.MessageResponse, com.yi.day7.proto.ProtoMessage.MessageResponse.Builder, com.yi.day7.proto.ProtoMessage.MessageResponseOrBuilder> messageResponseBuilder_;
       /**
        * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
        * @return Whether the messageResponse field is set.
@@ -7287,9 +8167,9 @@ public final class MessageProto {
        * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
        * @return The messageResponse.
        */
-      public com.yi.day7.proto.MessageProto.MessageResponse getMessageResponse() {
+      public com.yi.day7.proto.ProtoMessage.MessageResponse getMessageResponse() {
         if (messageResponseBuilder_ == null) {
-          return messageResponse_ == null ? com.yi.day7.proto.MessageProto.MessageResponse.getDefaultInstance() : messageResponse_;
+          return messageResponse_ == null ? com.yi.day7.proto.ProtoMessage.MessageResponse.getDefaultInstance() : messageResponse_;
         } else {
           return messageResponseBuilder_.getMessage();
         }
@@ -7297,7 +8177,7 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
        */
-      public Builder setMessageResponse(com.yi.day7.proto.MessageProto.MessageResponse value) {
+      public Builder setMessageResponse(com.yi.day7.proto.ProtoMessage.MessageResponse value) {
         if (messageResponseBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7314,7 +8194,7 @@ public final class MessageProto {
        * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
        */
       public Builder setMessageResponse(
-          com.yi.day7.proto.MessageProto.MessageResponse.Builder builderForValue) {
+          com.yi.day7.proto.ProtoMessage.MessageResponse.Builder builderForValue) {
         if (messageResponseBuilder_ == null) {
           messageResponse_ = builderForValue.build();
           onChanged();
@@ -7327,11 +8207,11 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
        */
-      public Builder mergeMessageResponse(com.yi.day7.proto.MessageProto.MessageResponse value) {
+      public Builder mergeMessageResponse(com.yi.day7.proto.ProtoMessage.MessageResponse value) {
         if (messageResponseBuilder_ == null) {
           if (messageResponse_ != null) {
             messageResponse_ =
-              com.yi.day7.proto.MessageProto.MessageResponse.newBuilder(messageResponse_).mergeFrom(value).buildPartial();
+              com.yi.day7.proto.ProtoMessage.MessageResponse.newBuilder(messageResponse_).mergeFrom(value).buildPartial();
           } else {
             messageResponse_ = value;
           }
@@ -7359,7 +8239,7 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
        */
-      public com.yi.day7.proto.MessageProto.MessageResponse.Builder getMessageResponseBuilder() {
+      public com.yi.day7.proto.ProtoMessage.MessageResponse.Builder getMessageResponseBuilder() {
         
         onChanged();
         return getMessageResponseFieldBuilder().getBuilder();
@@ -7367,23 +8247,23 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
        */
-      public com.yi.day7.proto.MessageProto.MessageResponseOrBuilder getMessageResponseOrBuilder() {
+      public com.yi.day7.proto.ProtoMessage.MessageResponseOrBuilder getMessageResponseOrBuilder() {
         if (messageResponseBuilder_ != null) {
           return messageResponseBuilder_.getMessageOrBuilder();
         } else {
           return messageResponse_ == null ?
-              com.yi.day7.proto.MessageProto.MessageResponse.getDefaultInstance() : messageResponse_;
+              com.yi.day7.proto.ProtoMessage.MessageResponse.getDefaultInstance() : messageResponse_;
         }
       }
       /**
        * <code>.com.yi.day7.proto.MessageResponse messageResponse = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.MessageResponse, com.yi.day7.proto.MessageProto.MessageResponse.Builder, com.yi.day7.proto.MessageProto.MessageResponseOrBuilder> 
+          com.yi.day7.proto.ProtoMessage.MessageResponse, com.yi.day7.proto.ProtoMessage.MessageResponse.Builder, com.yi.day7.proto.ProtoMessage.MessageResponseOrBuilder> 
           getMessageResponseFieldBuilder() {
         if (messageResponseBuilder_ == null) {
           messageResponseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.yi.day7.proto.MessageProto.MessageResponse, com.yi.day7.proto.MessageProto.MessageResponse.Builder, com.yi.day7.proto.MessageProto.MessageResponseOrBuilder>(
+              com.yi.day7.proto.ProtoMessage.MessageResponse, com.yi.day7.proto.ProtoMessage.MessageResponse.Builder, com.yi.day7.proto.ProtoMessage.MessageResponseOrBuilder>(
                   getMessageResponse(),
                   getParentForChildren(),
                   isClean());
@@ -7392,9 +8272,9 @@ public final class MessageProto {
         return messageResponseBuilder_;
       }
 
-      private com.yi.day7.proto.MessageProto.MessageNotification notification_;
+      private com.yi.day7.proto.ProtoMessage.MessageNotification notification_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.MessageNotification, com.yi.day7.proto.MessageProto.MessageNotification.Builder, com.yi.day7.proto.MessageProto.MessageNotificationOrBuilder> notificationBuilder_;
+          com.yi.day7.proto.ProtoMessage.MessageNotification, com.yi.day7.proto.ProtoMessage.MessageNotification.Builder, com.yi.day7.proto.ProtoMessage.MessageNotificationOrBuilder> notificationBuilder_;
       /**
        * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
        * @return Whether the notification field is set.
@@ -7406,9 +8286,9 @@ public final class MessageProto {
        * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
        * @return The notification.
        */
-      public com.yi.day7.proto.MessageProto.MessageNotification getNotification() {
+      public com.yi.day7.proto.ProtoMessage.MessageNotification getNotification() {
         if (notificationBuilder_ == null) {
-          return notification_ == null ? com.yi.day7.proto.MessageProto.MessageNotification.getDefaultInstance() : notification_;
+          return notification_ == null ? com.yi.day7.proto.ProtoMessage.MessageNotification.getDefaultInstance() : notification_;
         } else {
           return notificationBuilder_.getMessage();
         }
@@ -7416,7 +8296,7 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
        */
-      public Builder setNotification(com.yi.day7.proto.MessageProto.MessageNotification value) {
+      public Builder setNotification(com.yi.day7.proto.ProtoMessage.MessageNotification value) {
         if (notificationBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7433,7 +8313,7 @@ public final class MessageProto {
        * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
        */
       public Builder setNotification(
-          com.yi.day7.proto.MessageProto.MessageNotification.Builder builderForValue) {
+          com.yi.day7.proto.ProtoMessage.MessageNotification.Builder builderForValue) {
         if (notificationBuilder_ == null) {
           notification_ = builderForValue.build();
           onChanged();
@@ -7446,11 +8326,11 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
        */
-      public Builder mergeNotification(com.yi.day7.proto.MessageProto.MessageNotification value) {
+      public Builder mergeNotification(com.yi.day7.proto.ProtoMessage.MessageNotification value) {
         if (notificationBuilder_ == null) {
           if (notification_ != null) {
             notification_ =
-              com.yi.day7.proto.MessageProto.MessageNotification.newBuilder(notification_).mergeFrom(value).buildPartial();
+              com.yi.day7.proto.ProtoMessage.MessageNotification.newBuilder(notification_).mergeFrom(value).buildPartial();
           } else {
             notification_ = value;
           }
@@ -7478,7 +8358,7 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
        */
-      public com.yi.day7.proto.MessageProto.MessageNotification.Builder getNotificationBuilder() {
+      public com.yi.day7.proto.ProtoMessage.MessageNotification.Builder getNotificationBuilder() {
         
         onChanged();
         return getNotificationFieldBuilder().getBuilder();
@@ -7486,29 +8366,148 @@ public final class MessageProto {
       /**
        * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
        */
-      public com.yi.day7.proto.MessageProto.MessageNotificationOrBuilder getNotificationOrBuilder() {
+      public com.yi.day7.proto.ProtoMessage.MessageNotificationOrBuilder getNotificationOrBuilder() {
         if (notificationBuilder_ != null) {
           return notificationBuilder_.getMessageOrBuilder();
         } else {
           return notification_ == null ?
-              com.yi.day7.proto.MessageProto.MessageNotification.getDefaultInstance() : notification_;
+              com.yi.day7.proto.ProtoMessage.MessageNotification.getDefaultInstance() : notification_;
         }
       }
       /**
        * <code>.com.yi.day7.proto.MessageNotification notification = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.yi.day7.proto.MessageProto.MessageNotification, com.yi.day7.proto.MessageProto.MessageNotification.Builder, com.yi.day7.proto.MessageProto.MessageNotificationOrBuilder> 
+          com.yi.day7.proto.ProtoMessage.MessageNotification, com.yi.day7.proto.ProtoMessage.MessageNotification.Builder, com.yi.day7.proto.ProtoMessage.MessageNotificationOrBuilder> 
           getNotificationFieldBuilder() {
         if (notificationBuilder_ == null) {
           notificationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.yi.day7.proto.MessageProto.MessageNotification, com.yi.day7.proto.MessageProto.MessageNotification.Builder, com.yi.day7.proto.MessageProto.MessageNotificationOrBuilder>(
+              com.yi.day7.proto.ProtoMessage.MessageNotification, com.yi.day7.proto.ProtoMessage.MessageNotification.Builder, com.yi.day7.proto.ProtoMessage.MessageNotificationOrBuilder>(
                   getNotification(),
                   getParentForChildren(),
                   isClean());
           notification_ = null;
         }
         return notificationBuilder_;
+      }
+
+      private com.yi.day7.proto.ProtoMessage.MessageHeartBeat heartBeat_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.yi.day7.proto.ProtoMessage.MessageHeartBeat, com.yi.day7.proto.ProtoMessage.MessageHeartBeat.Builder, com.yi.day7.proto.ProtoMessage.MessageHeartBeatOrBuilder> heartBeatBuilder_;
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       * @return Whether the heartBeat field is set.
+       */
+      public boolean hasHeartBeat() {
+        return heartBeatBuilder_ != null || heartBeat_ != null;
+      }
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       * @return The heartBeat.
+       */
+      public com.yi.day7.proto.ProtoMessage.MessageHeartBeat getHeartBeat() {
+        if (heartBeatBuilder_ == null) {
+          return heartBeat_ == null ? com.yi.day7.proto.ProtoMessage.MessageHeartBeat.getDefaultInstance() : heartBeat_;
+        } else {
+          return heartBeatBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       */
+      public Builder setHeartBeat(com.yi.day7.proto.ProtoMessage.MessageHeartBeat value) {
+        if (heartBeatBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          heartBeat_ = value;
+          onChanged();
+        } else {
+          heartBeatBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       */
+      public Builder setHeartBeat(
+          com.yi.day7.proto.ProtoMessage.MessageHeartBeat.Builder builderForValue) {
+        if (heartBeatBuilder_ == null) {
+          heartBeat_ = builderForValue.build();
+          onChanged();
+        } else {
+          heartBeatBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       */
+      public Builder mergeHeartBeat(com.yi.day7.proto.ProtoMessage.MessageHeartBeat value) {
+        if (heartBeatBuilder_ == null) {
+          if (heartBeat_ != null) {
+            heartBeat_ =
+              com.yi.day7.proto.ProtoMessage.MessageHeartBeat.newBuilder(heartBeat_).mergeFrom(value).buildPartial();
+          } else {
+            heartBeat_ = value;
+          }
+          onChanged();
+        } else {
+          heartBeatBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       */
+      public Builder clearHeartBeat() {
+        if (heartBeatBuilder_ == null) {
+          heartBeat_ = null;
+          onChanged();
+        } else {
+          heartBeat_ = null;
+          heartBeatBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       */
+      public com.yi.day7.proto.ProtoMessage.MessageHeartBeat.Builder getHeartBeatBuilder() {
+        
+        onChanged();
+        return getHeartBeatFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       */
+      public com.yi.day7.proto.ProtoMessage.MessageHeartBeatOrBuilder getHeartBeatOrBuilder() {
+        if (heartBeatBuilder_ != null) {
+          return heartBeatBuilder_.getMessageOrBuilder();
+        } else {
+          return heartBeat_ == null ?
+              com.yi.day7.proto.ProtoMessage.MessageHeartBeat.getDefaultInstance() : heartBeat_;
+        }
+      }
+      /**
+       * <code>.com.yi.day7.proto.MessageHeartBeat heartBeat = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.yi.day7.proto.ProtoMessage.MessageHeartBeat, com.yi.day7.proto.ProtoMessage.MessageHeartBeat.Builder, com.yi.day7.proto.ProtoMessage.MessageHeartBeatOrBuilder> 
+          getHeartBeatFieldBuilder() {
+        if (heartBeatBuilder_ == null) {
+          heartBeatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.yi.day7.proto.ProtoMessage.MessageHeartBeat, com.yi.day7.proto.ProtoMessage.MessageHeartBeat.Builder, com.yi.day7.proto.ProtoMessage.MessageHeartBeatOrBuilder>(
+                  getHeartBeat(),
+                  getParentForChildren(),
+                  isClean());
+          heartBeat_ = null;
+        }
+        return heartBeatBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -7527,12 +8526,12 @@ public final class MessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:com.yi.day7.proto.Message)
-    private static final com.yi.day7.proto.MessageProto.Message DEFAULT_INSTANCE;
+    private static final com.yi.day7.proto.ProtoMessage.Message DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.yi.day7.proto.MessageProto.Message();
+      DEFAULT_INSTANCE = new com.yi.day7.proto.ProtoMessage.Message();
     }
 
-    public static com.yi.day7.proto.MessageProto.Message getDefaultInstance() {
+    public static com.yi.day7.proto.ProtoMessage.Message getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7557,7 +8556,7 @@ public final class MessageProto {
     }
 
     @java.lang.Override
-    public com.yi.day7.proto.MessageProto.Message getDefaultInstanceForType() {
+    public com.yi.day7.proto.ProtoMessage.Message getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7589,6 +8588,11 @@ public final class MessageProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_yi_day7_proto_MessageNotification_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_yi_day7_proto_MessageHeartBeat_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_yi_day7_proto_MessageHeartBeat_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_yi_day7_proto_Message_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -7608,7 +8612,7 @@ public final class MessageProto {
       "\022\022\n\nappVersion\030\005 \001(\t\"K\n\rLoginResponse\022\016\n" +
       "\006result\030\001 \001(\010\022\014\n\004code\030\002 \001(\r\022\014\n\004info\030\003 \001(" +
       "\t\022\016\n\006expose\030\004 \001(\r\"\250\001\n\016MessageRequest\022\r\n\005" +
-      "msgId\030\001 \001(\004\022\014\n\004form\030\002 \001(\t\022\n\n\002to\030\003 \001(\t\022\014\n" +
+      "msgId\030\001 \001(\004\022\014\n\004from\030\002 \001(\t\022\n\n\002to\030\003 \001(\t\022\014\n" +
       "\004time\030\004 \001(\004\022\017\n\007msgType\030\005 \001(\r\022\017\n\007content\030" +
       "\006 \001(\t\022\013\n\003url\030\010 \001(\t\022\020\n\010property\030\t \001(\t\022\020\n\010" +
       "fromNick\030\n \001(\t\022\014\n\004json\030\013 \001(\t\"t\n\017MessageR" +
@@ -7616,23 +8620,26 @@ public final class MessageProto {
       "\004info\030\003 \001(\t\022\016\n\006expose\030\004 \001(\r\022\021\n\tlastBlock" +
       "\030\005 \001(\010\022\022\n\nblockIndex\030\006 \001(\007\"W\n\023MessageNot" +
       "ification\022\017\n\007msgType\030\001 \001(\r\022\016\n\006sender\030\002 \001" +
-      "(\014\022\014\n\004json\030\003 \001(\t\022\021\n\ttimestamp\030\004 \001(\t\"\365\002\n\007" +
-      "Message\022)\n\004type\030\001 \001(\0162\033.com.yi.day7.prot" +
-      "o.HeadType\022\020\n\010sequence\030\002 \001(\004\022\021\n\tsessionI" +
-      "d\030\003 \001(\t\0220\n\007request\030\004 \001(\0132\037.com.yi.day7.p" +
-      "roto.LoginRequest\0222\n\010response\030\005 \001(\0132 .co" +
-      "m.yi.day7.proto.LoginResponse\0229\n\016message" +
-      "Request\030\006 \001(\0132!.com.yi.day7.proto.Messag" +
-      "eRequest\022;\n\017messageResponse\030\007 \001(\0132\".com." +
-      "yi.day7.proto.MessageResponse\022<\n\014notific" +
-      "ation\030\010 \001(\0132&.com.yi.day7.proto.MessageN" +
-      "otification*\316\001\n\010HeadType\022\021\n\rLOGIN_REQUES" +
-      "T\020\000\022\022\n\016LOGIN_RESPONSE\020\001\022\022\n\016LOGOUT_REQUES" +
-      "T\020\002\022\023\n\017LOGOUT_RESPONSE\020\003\022\025\n\021KEEPALIVE_RE" +
-      "QUEST\020\004\022\026\n\022KEEPALIVE_RESPONSE\020\005\022\023\n\017MESSA" +
-      "GE_REQUEST\020\006\022\024\n\020MESSAGE_RESPONSE\020\007\022\030\n\024ME" +
-      "SSAGE_NOTIFICATION\020\010B!\n\021com.yi.day7.prot" +
-      "oB\014MessageProtob\006proto3"
+      "(\014\022\014\n\004json\030\003 \001(\t\022\021\n\ttimestamp\030\004 \001(\t\":\n\020M" +
+      "essageHeartBeat\022\013\n\003seq\030\001 \001(\r\022\013\n\003uid\030\002 \001(" +
+      "\t\022\014\n\004json\030\003 \001(\t\"\267\003\n\007Message\022)\n\004type\030\001 \001(" +
+      "\0162\033.com.yi.day7.proto.HeadType\022\020\n\010sequen" +
+      "ce\030\002 \001(\004\022\021\n\tsessionId\030\003 \001(\t\0225\n\014loginRequ" +
+      "est\030\004 \001(\0132\037.com.yi.day7.proto.LoginReque" +
+      "st\0227\n\rloginResponse\030\005 \001(\0132 .com.yi.day7." +
+      "proto.LoginResponse\0229\n\016messageRequest\030\006 " +
+      "\001(\0132!.com.yi.day7.proto.MessageRequest\022;" +
+      "\n\017messageResponse\030\007 \001(\0132\".com.yi.day7.pr" +
+      "oto.MessageResponse\022<\n\014notification\030\010 \001(" +
+      "\0132&.com.yi.day7.proto.MessageNotificatio" +
+      "n\0226\n\theartBeat\030\t \001(\0132#.com.yi.day7.proto" +
+      ".MessageHeartBeat*\316\001\n\010HeadType\022\021\n\rLOGIN_" +
+      "REQUEST\020\000\022\022\n\016LOGIN_RESPONSE\020\001\022\022\n\016LOGOUT_" +
+      "REQUEST\020\002\022\023\n\017LOGOUT_RESPONSE\020\003\022\025\n\021KEEPAL" +
+      "IVE_REQUEST\020\004\022\026\n\022KEEPALIVE_RESPONSE\020\005\022\023\n" +
+      "\017MESSAGE_REQUEST\020\006\022\024\n\020MESSAGE_RESPONSE\020\007" +
+      "\022\030\n\024MESSAGE_NOTIFICATION\020\010B!\n\021com.yi.day" +
+      "7.protoB\014ProtoMessageb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -7655,7 +8662,7 @@ public final class MessageProto {
     internal_static_com_yi_day7_proto_MessageRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_yi_day7_proto_MessageRequest_descriptor,
-        new java.lang.String[] { "MsgId", "Form", "To", "Time", "MsgType", "Content", "Url", "Property", "FromNick", "Json", });
+        new java.lang.String[] { "MsgId", "From", "To", "Time", "MsgType", "Content", "Url", "Property", "FromNick", "Json", });
     internal_static_com_yi_day7_proto_MessageResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_com_yi_day7_proto_MessageResponse_fieldAccessorTable = new
@@ -7668,12 +8675,18 @@ public final class MessageProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_yi_day7_proto_MessageNotification_descriptor,
         new java.lang.String[] { "MsgType", "Sender", "Json", "Timestamp", });
-    internal_static_com_yi_day7_proto_Message_descriptor =
+    internal_static_com_yi_day7_proto_MessageHeartBeat_descriptor =
       getDescriptor().getMessageTypes().get(5);
+    internal_static_com_yi_day7_proto_MessageHeartBeat_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_yi_day7_proto_MessageHeartBeat_descriptor,
+        new java.lang.String[] { "Seq", "Uid", "Json", });
+    internal_static_com_yi_day7_proto_Message_descriptor =
+      getDescriptor().getMessageTypes().get(6);
     internal_static_com_yi_day7_proto_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_yi_day7_proto_Message_descriptor,
-        new java.lang.String[] { "Type", "Sequence", "SessionId", "Request", "Response", "MessageRequest", "MessageResponse", "Notification", });
+        new java.lang.String[] { "Type", "Sequence", "SessionId", "LoginRequest", "LoginResponse", "MessageRequest", "MessageResponse", "Notification", "HeartBeat", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
