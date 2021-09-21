@@ -38,14 +38,15 @@ public class CommandController {
         final EventLoop eventLoop = f.channel().eventLoop();
         if (!f.isSuccess()) {
             System.out.println("连接不成功，将在3s后重试");
-            eventLoop.schedule(() -> ClientContext.nettyClient.doConnect(), 3, TimeUnit.SECONDS);
+            eventLoop.schedule(ClientContext.nettyClient::doConnect, 3, TimeUnit.SECONDS);
             connectedFlag = false;
         } else {
-            connectedFlag = true;
             System.out.println("连接服务器成功");
             channel = f.channel();
             session = new ClientSession(channel);
+            session.setConnected(true);
             channel.closeFuture().addListener(closeFuture);
+            connectedFlag = true;
 
             notifyCommandThread();
         }
@@ -82,7 +83,7 @@ public class CommandController {
 
     public void commandThreadRunning() {
         while (true) {
-            while (connectedFlag == false) {
+            while (!connectedFlag) {
                 startConnectServer();
                 waitCommandThread();
             }
@@ -110,8 +111,6 @@ public class CommandController {
                         command.exec(scanner);
                         startLogout((LogoutConsoleCommand) command);
                         break;
-                    default:
-                        System.out.println(command.getTip() + "命令将不会执行");
                 }
             }
         }
